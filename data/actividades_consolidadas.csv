@@ -1,0 +1,176 @@
+id,fuente,tipo,tipo_original,fecha,fecha_dt,distancia_km,duracion_minutos,calorias_kcal,fc_media,ritmo_medio,desnivel_positivo_m,intervalo_antropometria
+NIKE_f54dfff3-50c6-4dd0-bd9c-544a6d626283,Nike Run Club,Running,Carrera,2018-04-19,2018-04-19 00:00:00,5.116,67.65,421.1,,5.6,17.9,00_Pre_Antropometria
+NIKE_a18b0295-d26f-474d-a4c8-810b180bf90b,Nike Run Club,Running,Carrera,2018-04-21,2018-04-21 00:00:00,6.315,42.97,518.6,,5.9,50.0,00_Pre_Antropometria
+NIKE_4be9e9c5-b163-498b-b533-fe2c42723bfb,Nike Run Club,Running,Carrera,2018-04-22,2018-04-22 00:00:00,11.003,80.62,853.3,,6.79,57.6,00_Pre_Antropometria
+NIKE_91edf2fa-9e37-402b-93a1-2866ba2a5e1a,Nike Run Club,Running,Carrera,2018-04-27,2018-04-27 00:00:00,5.05,28.83,416.4,,5.65,14.3,00_Pre_Antropometria
+NIKE_d515ae47-dfd2-4c50-bc79-cd823ecf2e09,Nike Run Club,Running,Carrera,2018-04-29,2018-04-29 00:00:00,5.023,33.99,398.8,,6.64,9.0,00_Pre_Antropometria
+NIKE_920e2a49-670e-43d0-b5a6-46c2ad9fe6e3,Nike Run Club,Running,Carrera,2018-05-03,2018-05-03 00:00:00,5.062,38.09,414.9,,5.81,44.8,00_Pre_Antropometria
+NIKE_a7791cb2-e079-4711-856f-18a0f7a90723,Nike Run Club,Running,Carrera,2018-05-05,2018-05-05 00:00:00,6.306,41.84,505.0,,6.32,17.0,00_Pre_Antropometria
+NIKE_6d97df38-2557-4238-aa98-887a8a784b58,Nike Run Club,Running,Carrera,2018-05-06,2018-05-06 00:00:00,5.669,35.93,460.9,,5.98,35.6,00_Pre_Antropometria
+NIKE_8c9a7ed4-c189-4fed-a25a-0560e8ca34ec,Nike Run Club,Running,Carrera,2018-05-08,2018-05-08 00:00:00,6.309,39.98,511.2,,5.96,28.7,00_Pre_Antropometria
+NIKE_8354d549-e62d-4a6a-be56-29c202da40ac,Nike Run Club,Running,Carrera,2018-05-11,2018-05-11 00:00:00,11.37,87.18,928.8,,5.99,49.1,00_Pre_Antropometria
+NIKE_e18c74f8-2df2-4cfd-918a-daf8b5b9f933,Nike Run Club,Running,Carrera,2018-05-19,2018-05-19 00:00:00,5.386,50.83,445.0,,5.58,5.6,00_Pre_Antropometria
+NIKE_53ba43ee-b0ef-4759-a14d-c5177a3532ff,Nike Run Club,Running,Carrera,2018-05-25,2018-05-25 00:00:00,5.076,27.45,420.1,,5.31,13.4,00_Pre_Antropometria
+NIKE_70ac6a02-34a3-4b15-9058-56e2dcd96df8,Nike Run Club,Running,Carrera,2018-05-26,2018-05-26 00:00:00,6.286,42.88,512.9,,5.92,20.1,00_Pre_Antropometria
+NIKE_00278f7f-dd70-4a52-8e57-49c916dd4107,Nike Run Club,Running,Carrera,2018-05-27,2018-05-27 00:00:00,6.372,44.4,508.8,,6.32,21.7,00_Pre_Antropometria
+NIKE_480e815e-06ff-43f5-9729-d7f4a61b9e04,Nike Run Club,Running,Carrera,2018-06-02,2018-06-02 00:00:00,5.029,188.14,405.4,,6.38,6.4,00_Pre_Antropometria
+NIKE_df6747ee-b936-41a1-8973-36d78c902a53,Nike Run Club,Running,Carrera,2018-06-16,2018-06-16 00:00:00,6.225,49.54,489.5,,7.38,16.2,00_Pre_Antropometria
+NIKE_1707fcbf-b8cb-4c34-b568-1979c19ab261,Nike Run Club,Running,Carrera,2018-06-20,2018-06-20 00:00:00,7.264,54.73,567.8,,7.01,17.2,00_Pre_Antropometria
+NIKE_1e9f9ed0-0874-46dc-953a-19ad6c3a2082,Nike Run Club,Running,Carrera,2018-06-30,2018-06-30 00:00:00,5.031,32.36,406.5,,6.43,14.4,00_Pre_Antropometria
+NIKE_a7032eaf-9a17-4d45-a5df-aa35bd018dcc,Nike Run Club,Running,Carrera,2018-08-17,2018-08-17 00:00:00,6.544,57.11,509.6,,8.73,25.5,00_Pre_Antropometria
+NIKE_71e9a145-46c6-4e86-924c-07a283561d04,Nike Run Club,Running,Carrera,2018-08-18,2018-08-18 00:00:00,4.881,197.05,380.7,,8.34,,00_Pre_Antropometria
+NIKE_37e6c0c5-10ac-463f-b449-0efd87f53f91,Nike Run Club,Running,Carrera,2018-08-20,2018-08-20 00:00:00,5.454,50.48,426.1,,9.25,,00_Pre_Antropometria
+NIKE_22408096-6a6f-49ad-819f-d4a687e135fd,Nike Run Club,Running,Carrera,2018-08-26,2018-08-26 00:00:00,4.141,20158.64,311.1,,8.16,,00_Pre_Antropometria
+NIKE_06d4b266-da61-4cba-8904-0e26f7a3d173,Nike Run Club,Running,Carrera,2018-09-09,2018-09-09 00:00:00,5.156,40.74,399.5,,7.9,22.3,00_Pre_Antropometria
+NIKE_3ac8daba-21b2-4214-94bf-4a8439cc506a,Nike Run Club,Running,Carrera,2018-09-21,2018-09-21 00:00:00,5.64,20160.0,439.4,,7.32,6.0,00_Pre_Antropometria
+NIKE_5675604d-7f33-4afa-ac70-4784fe3e193a,Nike Run Club,Running,Carrera,2018-10-06,2018-10-06 00:00:00,0.0,0.02,,,nan,,00_Pre_Antropometria
+NIKE_6114b03c-892d-4e8c-adc5-9e503bd96525,Nike Run Club,Running,Carrera,2018-10-06,2018-10-06 00:00:00,7.225,70.85,534.1,,9.11,10.9,00_Pre_Antropometria
+NIKE_66f1b8c9-e388-4cb3-ad7e-cf629f2f2301,Nike Run Club,Running,Carrera,2018-10-30,2018-10-30 00:00:00,7.421,50.2,576.9,,6.76,26.2,00_Pre_Antropometria
+NIKE_8e147037-2ea7-48ea-a586-b7915e6da103,Nike Run Club,Running,Carrera,2018-11-18,2018-11-18 00:00:00,11.118,113.51,753.4,,10.21,29.3,00_Pre_Antropometria
+NIKE_6c84c6ed-db96-45b1-a375-2e2b388a8d13,Nike Run Club,Running,Carrera,2018-12-02,2018-12-02 00:00:00,6.452,57.22,467.2,,8.43,15.0,00_Pre_Antropometria
+NIKE_788584f9-b5a2-49a5-9787-eaeccfd86270,Nike Run Club,Running,Carrera,2018-12-09,2018-12-09 00:00:00,7.158,63.22,532.1,,7.9,,00_Pre_Antropometria
+NIKE_51fa3898-8c6f-49ca-a293-86ff00fd1543,Nike Run Club,Running,Carrera,2018-12-14,2018-12-14 00:00:00,6.453,51.23,502.9,,7.46,40.4,00_Pre_Antropometria
+NIKE_5fb84d05-c484-48a5-ab36-e603c00b6079,Nike Run Club,Running,Carrera,2018-12-15,2018-12-15 00:00:00,6.639,59.46,511.0,,7.36,37.8,00_Pre_Antropometria
+NIKE_a8e476db-0494-4b2f-a5f5-9694fe016a09,Nike Run Club,Running,Carrera,2019-01-04,2019-01-04 00:00:00,7.295,64.19,518.9,,8.51,13.0,00_Pre_Antropometria
+NIKE_900a911e-1b07-45b6-98dd-944f9351a959,Nike Run Club,Running,Carrera,2019-01-17,2019-01-17 00:00:00,2.56,1501.33,147.5,,12.26,,00_Pre_Antropometria
+NIKE_e9f252b5-61e1-4680-84bd-54c7c993e1e5,Nike Run Club,Running,Carrera,2019-01-18,2019-01-18 00:00:00,10.329,123.08,737.4,,9.8,41.5,00_Pre_Antropometria
+NIKE_824459b3-06c9-46c1-bbe8-29d75f4305aa,Nike Run Club,Running,Carrera,2019-01-22,2019-01-22 00:00:00,6.011,38.34,477.3,,6.19,8.8,00_Pre_Antropometria
+NIKE_9da9fddd-45b2-403e-a967-84c44a80b03c,Nike Run Club,Running,Carrera,2019-03-05,2019-03-05 00:00:00,5.528,56.25,372.8,,9.5,21.0,00_Pre_Antropometria
+NIKE_f037de5b-0ece-4eab-a5a3-d3131ab54a27,Nike Run Club,Running,Carrera,2019-07-27,2019-07-27 00:00:00,6.019,58.89,426.4,,8.81,30.8,00_Pre_Antropometria
+NIKE_59e591d9-935c-4475-896f-a98d24175218,Nike Run Club,Running,Carrera,2019-10-07,2019-10-07 00:00:00,2.925,116.98,149.9,,11.07,6.2,00_Pre_Antropometria
+NIKE_c1849d15-270b-4c6f-be33-f2806e73e93b,Nike Run Club,Running,Carrera,2019-11-18,2019-11-18 00:00:00,7.787,94.67,423.9,,11.5,2.1,00_Pre_Antropometria
+NIKE_95621fcb-3e61-4a1a-8131-3270be4b2f02,Nike Run Club,Running,Carrera,2019-11-20,2019-11-20 00:00:00,6.957,103.12,402.9,,12.92,2.1,00_Pre_Antropometria
+NIKE_2c5e0909-1049-4d2d-adb8-e46c1e4650a2,Nike Run Club,Running,Carrera,2019-12-21,2019-12-21 00:00:00,5.051,65.75,365.0,,8.29,5.0,00_Pre_Antropometria
+NIKE_0a212323-9fdf-4890-a4ac-4a11fabfe936,Nike Run Club,Running,Carrera,2020-01-15,2020-01-15 00:00:00,7.058,63.34,489.3,,7.39,83.2,00_Pre_Antropometria
+NIKE_2846d9e9-6342-4b33-9f7d-bc483fb1db54,Nike Run Club,Running,Carrera,2020-02-13,2020-02-13 00:00:00,5.636,52.28,372.4,,8.21,3.2,00_Pre_Antropometria
+NIKE_b6e6fd0f-1828-4b3b-b7e5-e6c8a31a6059,Nike Run Club,Running,Carrera,2020-02-28,2020-02-28 00:00:00,7.4,77.57,482.1,,8.96,4.0,00_Pre_Antropometria
+NIKE_c65d9b62-2374-4485-8baa-887d010c19a6,Nike Run Club,Running,Carrera,2020-03-01,2020-03-01 00:00:00,5.786,61.5,378.9,,10.63,5.2,00_Pre_Antropometria
+NIKE_9a20ef78-8b62-46ff-a51c-ca8aa4204f78,Nike Run Club,Running,Carrera,2020-03-01,2020-03-01 00:00:00,5.786,61.5,378.9,,8.93,5.2,00_Pre_Antropometria
+NIKE_ee84e758-0173-4faa-b3f8-f2494fb7ea90,Nike Run Club,Running,Carrera,2020-08-02,2020-08-02 00:00:00,0.058,4.27,3.2,,72.43,39.8,00_Pre_Antropometria
+NIKE_daedf2d9-7831-4317-af42-2d6c5e6146e8,Nike Run Club,Running,Carrera,2020-08-02,2020-08-02 00:00:00,5.775,81.86,387.3,,9.01,193.7,00_Pre_Antropometria
+NIKE_21a8b3fd-64fc-4611-a353-9d595561a302,Nike Run Club,Running,Carrera,2020-08-13,2020-08-13 00:00:00,7.061,62.88,488.4,,7.41,7.8,00_Pre_Antropometria
+NIKE_3533a52b-dda0-4b6b-8f70-0d922fc3ae72,Nike Run Club,Running,Carrera,2020-09-18,2020-09-18 00:00:00,7.485,89.29,482.2,,10.1,,00_Pre_Antropometria
+NIKE_7e497f3e-9f46-476f-9486-16d4cc5a3add,Nike Run Club,Running,Carrera,2020-11-17,2020-11-17 00:00:00,14.759,208.44,851.7,,12.1,24.6,00_Pre_Antropometria
+NIKE_88cbe3b5-1f8f-4abf-bba7-e2b1ae71192a,Nike Run Club,Running,Carrera,2021-01-22,2021-01-22 00:00:00,5.141,70.53,333.6,,9.21,27.5,00_Pre_Antropometria
+NIKE_774065c4-e568-44e1-9b8b-7cfed8ff2471,Nike Run Club,Running,Carrera,2021-01-25,2021-01-25 00:00:00,6.507,88.9,395.3,,10.57,34.6,00_Pre_Antropometria
+NIKE_8b196cb8-da05-489b-8e2c-d103d080dbcc,Nike Run Club,Running,Carrera,2021-01-26,2021-01-26 00:00:00,0.0,,,,nan,,00_Pre_Antropometria
+NIKE_6718ff46-f2a9-43ac-b93a-9afd424ce57b,Nike Run Club,Running,Carrera,2023-01-26,2023-01-26 00:00:00,5.444,46.96,365.7,,7.92,36.5,00_Pre_Antropometria
+NIKE_61fea9d7-9cd3-4f99-8935-9109c39e8221,Nike Run Club,Running,Carrera,2023-01-26,2023-01-26 00:00:00,1.106,8.03,76.3,,6.96,,00_Pre_Antropometria
+NIKE_b05f86b3-610e-426d-a095-f03c090b2df0,Nike Run Club,Running,Carrera,2023-02-19,2023-02-19 00:00:00,6.023,57.69,416.6,,6.81,37.3,00_Pre_Antropometria
+NIKE_081a529a-608a-49ba-a630-0ca96f6cf1f1,Nike Run Club,Running,Carrera,2023-02-20,2023-02-20 00:00:00,0.944,13.7,49.8,,13.47,,00_Pre_Antropometria
+NIKE_1ac073ec-b90e-458c-97d5-024b970714e7,Nike Run Club,Running,Carrera,2023-07-30,2023-07-30 00:00:00,5.317,31.93,387.2,,5.95,1.0,00_Pre_Antropometria
+NIKE_55fe4a3e-5f01-450f-8214-16036b1e7f02,Nike Run Club,Running,Carrera,2023-08-13,2023-08-13 00:00:00,5.028,28.56,368.7,,5.67,,00_Pre_Antropometria
+NIKE_88a9f00f-c686-4ccb-be21-73df7f35cfdb,Nike Run Club,Running,Carrera,2023-11-26,2023-11-26 00:00:00,5.016,29.25,370.2,,5.65,3.0,00_Pre_Antropometria
+NIKE_ebf0695b-e545-46b4-bc64-98c41d731a9f,Nike Run Club,Running,Carrera,2023-12-15,2023-12-15 00:00:00,9.153,145.44,602.5,,8.64,50.8,00_Pre_Antropometria
+NIKE_fde85d11-8bdf-4efd-ae74-a1d0912cb067,Nike Run Club,Running,Carrera,2024-01-01,2024-01-01 00:00:00,4.011,23.95,295.3,,5.93,27.0,00_Pre_Antropometria
+NIKE_21efd9c4-6e02-46fd-b6f1-2b8e93ba7dc8,Nike Run Club,Running,Carrera,2024-02-05,2024-02-05 00:00:00,3.022,16.73,225.0,,5.53,42.1,00_Pre_Antropometria
+NIKE_c3a3339f-d279-4e65-a697-0c03aaa3be07,Nike Run Club,Running,Carrera,2024-02-05,2024-02-05 00:00:00,5.096,26.94,379.8,,5.26,32.3,00_Pre_Antropometria
+NIKE_9bf55a3d-218e-4267-bf36-4bcb8b6432b7,Nike Run Club,Running,Carrera,2024-02-18,2024-02-18 00:00:00,9.696,98.2,590.0,,9.82,34.4,00_Pre_Antropometria
+NIKE_09b87a30-821c-46c3-9b8c-c1f04b1260d9,Nike Run Club,Running,Carrera,2024-02-25,2024-02-25 00:00:00,6.012,32.72,447.6,,5.4,5.3,00_Pre_Antropometria
+NIKE_8abc5a5d-c819-40fc-9156-f7ee1f702a09,Nike Run Club,Running,Carrera,2024-02-25,2024-02-25 00:00:00,2.056,12.97,150.9,,5.92,5.2,00_Pre_Antropometria
+NIKE_05e328b9-4bb6-4a4b-96ec-72231a61604c,Nike Run Club,Running,Carrera,2024-03-01,2024-03-01 00:00:00,6.371,41.88,468.4,,5.89,38.7,00_Pre_Antropometria
+NIKE_8992c2ef-f71e-4251-bd6d-13d68151f70c,Nike Run Club,Running,Carrera,2024-03-03,2024-03-03 00:00:00,3.49,317.68,178.7,,12.89,8.4,00_Pre_Antropometria
+NIKE_5c8a21ad-8800-45cf-b699-dbe7d28f3a94,Nike Run Club,Running,Carrera,2024-03-04,2024-03-04 00:00:00,7.763,49.69,572.2,,5.89,32.7,00_Pre_Antropometria
+NIKE_ca01363f-6abd-4f65-ae6a-6a746b6d0f92,Nike Run Club,Running,Carrera,2024-03-17,2024-03-17 00:00:00,6.58,38.07,489.8,,5.36,89.6,00_Pre_Antropometria
+NIKE_c29bb22f-4588-459e-ac63-5210ebdf34cb,Nike Run Club,Running,Carrera,2024-03-25,2024-03-25 00:00:00,7.034,55.97,484.7,,7.43,16.2,00_Pre_Antropometria
+NIKE_eebf01c3-b344-424a-8f8a-8fdc2d467048,Nike Run Club,Running,Carrera,2024-03-29,2024-03-29 00:00:00,10.046,64.98,724.7,,6.32,72.5,00_Pre_Antropometria
+NIKE_ba3c0f89-c37c-4b41-9a71-e9d05df3aae6,Nike Run Club,Running,Carrera,2024-04-07,2024-04-07 00:00:00,10.014,54.41,748.8,,5.28,144.2,00_Pre_Antropometria
+NIKE_abb70dd7-d73d-49b0-adf0-0d2b4d763f0b,Nike Run Club,Running,Carrera,2024-05-30,2024-05-30 00:00:00,5.01,29.42,369.9,,5.86,4.5,Periodo_01_2024-05-29_a_2024-06-26
+NIKE_f3473ab1-2e07-4bd9-b062-f780d81e98c4,Nike Run Club,Running,Carrera,2024-08-09,2024-08-09 00:00:00,6.383,35.64,472.2,,5.58,98.1,Periodo_03_2024-07-24_a_2024-08-28
+NIKE_494a5295-f558-4c8c-939d-40107b9c8e1a,Nike Run Club,Running,Carrera,2024-08-13,2024-08-13 00:00:00,4.837,50.55,373.5,,10.44,54.8,Periodo_03_2024-07-24_a_2024-08-28
+NIKE_1ba69809-87b6-45bb-8c03-6f5c29b7c0ce,Nike Run Club,Running,Carrera,2024-11-22,2024-11-22 00:00:00,11.054,168.49,748.2,,15.23,214.8,Periodo_05_2024-10-23_a_2025-05-16
+NIKE_4a947a05-26d8-4667-a4c6-b07b7f54afad,Nike Run Club,Running,Carrera,2024-12-03,2024-12-03 00:00:00,5.534,45.9,369.7,,8.28,20.1,Periodo_05_2024-10-23_a_2025-05-16
+NIKE_5d834552-77a8-4029-a31e-2e5511150957,Nike Run Club,Running,Carrera,2024-12-22,2024-12-22 00:00:00,8.038,43.83,593.6,,5.12,31.1,Periodo_05_2024-10-23_a_2025-05-16
+NIKE_e102ee81-4eab-44e5-9e80-86d4c21ca207,Nike Run Club,Running,Carrera,2024-12-26,2024-12-26 00:00:00,8.224,73.28,571.8,,7.03,185.7,Periodo_05_2024-10-23_a_2025-05-16
+NIKE_1b4297e4-aa43-4502-800d-4b374cac26f5,Nike Run Club,Running,Carrera,2025-01-15,2025-01-15 00:00:00,5.861,43.46,426.6,,6.06,37.0,Periodo_05_2024-10-23_a_2025-05-16
+NIKE_838bf243-c674-4600-a24b-cb1109c02853,Nike Run Club,Running,Carrera,2025-01-26,2025-01-26 00:00:00,10.077,69.03,730.9,,5.98,380.4,Periodo_05_2024-10-23_a_2025-05-16
+NIKE_f82a1f8f-2ca5-461f-814a-8f9fcd8725fa,Nike Run Club,Running,Carrera,2025-01-26,2025-01-26 00:00:00,5.797,34.66,431.2,,5.32,5.1,Periodo_05_2024-10-23_a_2025-05-16
+NIKE_5477d808-3f98-4407-80e6-4393429067f6,Nike Run Club,Running,Carrera,2025-01-28,2025-01-28 00:00:00,5.193,44.28,372.7,,6.07,34.9,Periodo_05_2024-10-23_a_2025-05-16
+NIKE_1bab3c14-81d4-4d82-8fe3-1d7989196df7,Nike Run Club,Running,Carrera,2025-01-30,2025-01-30 00:00:00,3.245,23.1,239.3,,6.15,20.8,Periodo_05_2024-10-23_a_2025-05-16
+NIKE_6c053e1b-4dc9-4040-81c0-7a5de42ec774,Nike Run Club,Running,Carrera,2025-02-09,2025-02-09 00:00:00,6.165,35.42,459.4,,5.39,18.0,Periodo_05_2024-10-23_a_2025-05-16
+NIKE_0205dc4e-7850-484d-85c5-c01ed0a5730f,Nike Run Club,Running,Carrera,2025-02-16,2025-02-16 00:00:00,10.412,60.33,759.6,,5.64,83.8,Periodo_05_2024-10-23_a_2025-05-16
+NIKE_c57fd7bd-fecf-4062-939a-93d11103b221,Nike Run Club,Running,Carrera,2025-02-23,2025-02-23 00:00:00,10.303,82.92,748.7,,6.15,287.0,Periodo_05_2024-10-23_a_2025-05-16
+NIKE_c827bde3-ca9f-4223-aaa3-3d6912e4af0f,Nike Run Club,Running,Carrera,2025-03-03,2025-03-03 00:00:00,5.07,30.95,369.3,,6.01,240.0,Periodo_05_2024-10-23_a_2025-05-16
+NIKE_c6da91b7-e233-4edc-af33-56335a552d9e,Nike Run Club,Running,Carrera,2025-03-04,2025-03-04 00:00:00,7.597,68.92,517.7,,7.79,623.4,Periodo_05_2024-10-23_a_2025-05-16
+NIKE_b5c09cce-e949-436c-98fe-cc74e22d314a,Nike Run Club,Running,Carrera,2025-03-06,2025-03-06 00:00:00,5.438,43.71,388.8,,6.43,70.1,Periodo_05_2024-10-23_a_2025-05-16
+NIKE_fa5a6ede-9256-4fb0-9789-1260523a338b,Nike Run Club,Running,Carrera,2025-03-22,2025-03-22 00:00:00,7.047,41.55,515.1,,5.78,232.2,Periodo_05_2024-10-23_a_2025-05-16
+NIKE_492a41a9-6a56-4508-908e-c4a06a1b5956,Nike Run Club,Running,Carrera,2025-04-02,2025-04-02 00:00:00,5.897,71.24,426.9,,5.9,17.6,Periodo_05_2024-10-23_a_2025-05-16
+NIKE_8b7d9a7e-d4b1-4b7e-afde-586cdf630f4e,Nike Run Club,Running,Carrera,2025-04-02,2025-04-02 00:00:00,4.298,24.27,319.2,,5.32,9.8,Periodo_05_2024-10-23_a_2025-05-16
+NIKE_eaf9c24b-18c8-47de-a9bc-479c629c7629,Nike Run Club,Running,Carrera,2025-04-11,2025-04-11 00:00:00,11.9,107.78,828.5,,7.07,78.9,Periodo_05_2024-10-23_a_2025-05-16
+NIKE_d577053d-e65f-4c1d-8527-20f8938f6ba7,Nike Run Club,Running,Carrera,2025-04-18,2025-04-18 00:00:00,13.027,2488.35,938.4,,191.01,220.3,Periodo_05_2024-10-23_a_2025-05-16
+NIKE_362ef4f2-91a4-416e-b623-3e10d824c373,Nike Run Club,Running,Carrera,2025-04-20,2025-04-20 00:00:00,6.515,38.96,479.0,,5.74,7.2,Periodo_05_2024-10-23_a_2025-05-16
+NIKE_e16bba58-297a-462d-9ceb-f53daafabb9d,Nike Run Club,Running,Carrera,2025-04-26,2025-04-26 00:00:00,5.075,31.15,372.7,,5.97,30.0,Periodo_05_2024-10-23_a_2025-05-16
+NIKE_91364842-20b3-4625-b3d2-76877ac0d3bb,Nike Run Club,Running,Carrera,2025-05-10,2025-05-10 00:00:00,11.045,95.43,789.1,,6.37,71.6,Periodo_05_2024-10-23_a_2025-05-16
+NIKE_5da77718-1172-493e-a9a7-cef8d44f54dc,Nike Run Club,Running,Carrera,2025-05-18,2025-05-18 00:00:00,2.13,13.73,171.8,,6.36,1.1,Periodo_06_2025-05-16_a_2025-08-01
+NIKE_470bcd2e-04e0-4198-8916-ad39f1cf5bda,Nike Run Club,Running,Carrera,2025-05-18,2025-05-18 00:00:00,4.144,23.17,306.7,,5.17,32.8,Periodo_06_2025-05-16_a_2025-08-01
+NIKE_56061b5e-84df-4f9b-8188-5f6ceb8f5d0c,Nike Run Club,Running,Carrera,2025-05-25,2025-05-25 00:00:00,10.059,54.94,750.3,,5.22,35.8,Periodo_06_2025-05-16_a_2025-08-01
+NIKE_260a4a04-2c5d-46c2-b9aa-a01f09d9ad5a,Nike Run Club,Running,Carrera,2025-05-31,2025-05-31 00:00:00,8.844,64.73,639.3,,6.72,22.1,Periodo_06_2025-05-16_a_2025-08-01
+NIKE_3d62a37f-f042-4c56-a17c-01d36dca4810,Nike Run Club,Running,Carrera,2025-06-19,2025-06-19 00:00:00,2.132,14.33,155.7,,6.07,9.4,Periodo_06_2025-05-16_a_2025-08-01
+NIKE_b6113109-26c8-494b-96f5-90c141b0a06c,Nike Run Club,Running,Carrera,2025-06-19,2025-06-19 00:00:00,7.537,135.01,532.1,,6.68,139.7,Periodo_06_2025-05-16_a_2025-08-01
+NIKE_bc17f3fe-6c50-4000-b398-61ce82475167,Nike Run Club,Running,Carrera,2025-06-21,2025-06-21 00:00:00,9.368,65.82,682.8,,6.54,79.2,Periodo_06_2025-05-16_a_2025-08-01
+NIKE_1f9973b9-8d49-4faf-aacf-87c21d0697c5,Nike Run Club,Running,Carrera,2025-06-28,2025-06-28 00:00:00,0.025,0.76,1.4,,28.97,,Periodo_06_2025-05-16_a_2025-08-01
+NIKE_32e0ff23-6fa1-4c21-a95d-f3a2063894a8,Nike Run Club,Running,Carrera,2025-06-28,2025-06-28 00:00:00,14.254,103.24,1036.0,,6.07,397.3,Periodo_06_2025-05-16_a_2025-08-01
+NIKE_d2372519-9f17-4587-8d45-73bbd5550986,Nike Run Club,Running,Carrera,2025-07-09,2025-07-09 00:00:00,6.709,48.65,475.3,,6.66,25.6,Periodo_06_2025-05-16_a_2025-08-01
+NIKE_c3a84669-378b-49b3-ab4a-7cae7ac86f13,Nike Run Club,Running,Carrera,2025-07-12,2025-07-12 00:00:00,11.678,75.43,858.4,,6.46,213.3,Periodo_06_2025-05-16_a_2025-08-01
+NIKE_0897fd62-21f4-43ec-8cd6-e9691bb9b4fe,Nike Run Club,Running,Carrera,2025-07-15,2025-07-15 00:00:00,7.906,56.0,571.9,,6.06,86.4,Periodo_06_2025-05-16_a_2025-08-01
+NIKE_d09a44dc-3312-48fc-8968-d863698a7cad,Nike Run Club,Running,Carrera,2025-07-15,2025-07-15 00:00:00,4.274,25.96,302.9,,6.06,21.5,Periodo_06_2025-05-16_a_2025-08-01
+NIKE_7dccb9a4-48f3-4914-95c0-a1697a211523,Nike Run Club,Running,Carrera,2025-07-15,2025-07-15 00:00:00,1.77,11.23,130.5,,5.97,16.9,Periodo_06_2025-05-16_a_2025-08-01
+NIKE_5d9618ca-ce5f-4d55-a9c7-7f87ddbb4fda,Nike Run Club,Running,Carrera,2025-07-19,2025-07-19 00:00:00,17.561,112.57,1297.3,,6.41,237.0,Periodo_06_2025-05-16_a_2025-08-01
+GARMIN_57,Garmin,Running,Carrera,2025-07-22,2025-07-22 21:51:42,12.72,87.87,906.0,133.0,,58,Periodo_06_2025-05-16_a_2025-08-01
+GARMIN_56,Garmin,Running,Carrera,2025-07-23,2025-07-23 19:26:49,4.36,43.9,375.0,121.0,,10,Periodo_06_2025-05-16_a_2025-08-01
+GARMIN_55,Garmin,Running,Carrera,2025-07-26,2025-07-26 08:44:11,23.96,161.53,2.047,133.0,,54,Periodo_06_2025-05-16_a_2025-08-01
+GARMIN_54,Garmin,Ciclismo,Ciclismo,2025-07-27,2025-07-27 20:04:28,13.9,72.0,631.0,123.0,,103,Periodo_06_2025-05-16_a_2025-08-01
+GARMIN_53,Garmin,Running,Carrera,2025-07-28,2025-07-28 19:46:02,1.56,11.85,143.0,127.0,,3,Periodo_06_2025-05-16_a_2025-08-01
+GARMIN_52,Garmin,Running,Carrera,2025-07-28,2025-07-28 20:00:31,6.46,34.58,484.0,145.0,,12,Periodo_06_2025-05-16_a_2025-08-01
+GARMIN_51,Garmin,Running,Carrera,2025-07-30,2025-07-30 18:59:06,9.62,61.55,725.0,120.0,,20,Periodo_06_2025-05-16_a_2025-08-01
+GARMIN_50,Garmin,Running,Carrera,2025-08-02,2025-08-02 11:12:46,5.31,48.22,506.0,123.0,,10,Periodo_07_2025-08-01_a_2026-02-21
+GARMIN_49,Garmin,Running,Carrera,2025-08-03,2025-08-03 08:06:03,15.12,79.33,1.139,133.0,,16,Periodo_07_2025-08-01_a_2026-02-21
+GARMIN_48,Garmin,Running,Carrera,2025-08-03,2025-08-03 09:35:39,6.38,37.9,572.0,158.0,,3,Periodo_07_2025-08-01_a_2026-02-21
+GARMIN_47,Garmin,Running,Carrera,2025-08-04,2025-08-04 19:43:29,5.17,35.33,404.0,118.0,,10,Periodo_07_2025-08-01_a_2026-02-21
+GARMIN_46,Garmin,Running,Carrera,2025-08-04,2025-08-04 20:20:37,1.2,9.69,115.0,129.0,,2,Periodo_07_2025-08-01_a_2026-02-21
+GARMIN_45,Garmin,Running,Carrera,2025-08-06,2025-08-06 19:11:43,12.01,105.42,943.0,121.0,,32,Periodo_07_2025-08-01_a_2026-02-21
+GARMIN_44,Garmin,Ciclismo,Ciclismo en sala,2025-08-08,2025-08-08 19:48:52,0.0,18.18,244.0,137.0,,--,Periodo_07_2025-08-01_a_2026-02-21
+GARMIN_43,Garmin,Running,Carrera,2025-08-09,2025-08-09 08:36:48,31.39,211.07,2.68,137.0,,59,Periodo_07_2025-08-01_a_2026-02-21
+GARMIN_42,Garmin,Running,Carrera,2025-08-11,2025-08-11 19:39:25,0.8,4.68,64.0,136.0,,--,Periodo_07_2025-08-01_a_2026-02-21
+GARMIN_41,Garmin,Running,Carrera,2025-08-11,2025-08-11 19:51:34,5.14,38.0,394.0,118.0,,10,Periodo_07_2025-08-01_a_2026-02-21
+GARMIN_40,Garmin,Running,Carrera,2025-08-13,2025-08-13 20:40:04,10.39,66.38,805.0,126.0,,14,Periodo_07_2025-08-01_a_2026-02-21
+GARMIN_39,Garmin,Running,Carrera,2025-08-14,2025-08-14 19:24:48,9.46,59.05,719.0,126.0,,21,Periodo_07_2025-08-01_a_2026-02-21
+GARMIN_38,Garmin,Running,Carrera,2025-08-16,2025-08-16 07:45:47,32.2,207.22,2.675,133.0,,97,Periodo_07_2025-08-01_a_2026-02-21
+GARMIN_37,Garmin,Ciclismo,Ciclismo,2025-08-17,2025-08-17 17:24:32,13.43,93.08,400.0,85.0,,102,Periodo_07_2025-08-01_a_2026-02-21
+GARMIN_36,Garmin,Running,Carrera,2025-08-18,2025-08-18 19:29:50,10.79,64.47,814.0,127.0,,24,Periodo_07_2025-08-01_a_2026-02-21
+GARMIN_35,Garmin,Cinta,Entrenamiento en cinta,2025-08-19,2025-08-19 20:52:49,1.01,7.42,88.0,124.0,,--,Periodo_07_2025-08-01_a_2026-02-21
+GARMIN_34,Garmin,Running,Carrera,2025-08-20,2025-08-20 21:19:03,8.21,59.27,695.0,128.0,,51,Periodo_07_2025-08-01_a_2026-02-21
+GARMIN_33,Garmin,Running,Carrera,2025-08-21,2025-08-21 19:35:56,6.72,69.45,571.0,103.0,,13,Periodo_07_2025-08-01_a_2026-02-21
+GARMIN_32,Garmin,Running,Carrera,2025-08-24,2025-08-24 06:36:53,12.36,77.82,975.0,124.0,,12,Periodo_07_2025-08-01_a_2026-02-21
+GARMIN_31,Garmin,Running,Carrera,2025-08-24,2025-08-24 08:22:16,21.37,128.1,1.661,129.0,,91,Periodo_07_2025-08-01_a_2026-02-21
+GARMIN_30,Garmin,Running,Carrera,2025-08-25,2025-08-25 19:37:05,8.3,57.33,636.0,124.0,,17,Periodo_07_2025-08-01_a_2026-02-21
+GARMIN_29,Garmin,Cinta,Entrenamiento en cinta,2025-08-27,2025-08-27 21:06:08,5.8,51.32,599.0,132.0,,--,Periodo_07_2025-08-01_a_2026-02-21
+GARMIN_28,Garmin,Running,Carrera,2025-08-28,2025-08-28 19:36:33,7.15,42.55,557.0,135.0,,10,Periodo_07_2025-08-01_a_2026-02-21
+GARMIN_27,Garmin,Running,Carrera,2025-08-30,2025-08-30 07:43:46,2.11,13.28,161.0,124.0,,5,Periodo_07_2025-08-01_a_2026-02-21
+GARMIN_26,Garmin,Running,Carrera,2025-08-30,2025-08-30 08:03:44,26.04,147.75,2.112,143.0,,68,Periodo_07_2025-08-01_a_2026-02-21
+GARMIN_25,Garmin,Cinta,Entrenamiento en cinta,2025-09-02,2025-09-02 20:32:59,4.32,42.65,579.0,138.0,,--,Periodo_07_2025-08-01_a_2026-02-21
+GARMIN_24,Garmin,Running,Carrera,2025-09-04,2025-09-04 19:11:28,7.04,45.57,510.0,120.0,,14,Periodo_07_2025-08-01_a_2026-02-21
+GARMIN_23,Garmin,Running,Carrera,2025-09-13,2025-09-13 09:26:01,14.06,88.25,1.146,123.0,,44,Periodo_07_2025-08-01_a_2026-02-21
+GARMIN_22,Garmin,Running,Carrera,2025-09-15,2025-09-15 19:28:49,5.14,34.55,403.0,124.0,,10,Periodo_07_2025-08-01_a_2026-02-21
+GARMIN_21,Garmin,Running,Carrera,2025-09-18,2025-09-18 19:37:33,6.36,39.68,513.0,140.0,,12,Periodo_07_2025-08-01_a_2026-02-21
+GARMIN_20,Garmin,Running,Carrera,2025-09-21,2025-09-21 07:14:55,42.5,253.38,3.279,123.0,,117,Periodo_07_2025-08-01_a_2026-02-21
+GARMIN_19,Garmin,Running,Carrera,2025-09-28,2025-09-28 19:15:02,10.14,64.4,846.0,141.0,,60,Periodo_07_2025-08-01_a_2026-02-21
+GARMIN_18,Garmin,Running,Carrera,2025-09-29,2025-09-29 19:34:58,4.23,30.18,330.0,122.0,,4,Periodo_07_2025-08-01_a_2026-02-21
+GARMIN_17,Garmin,Running,Carrera,2025-10-10,2025-10-10 14:51:50,5.88,38.53,519.0,152.0,,21,Periodo_07_2025-08-01_a_2026-02-21
+GARMIN_16,Garmin,Running,Carrera,2025-10-12,2025-10-12 19:20:57,7.97,50.35,614.0,131.0,,58,Periodo_07_2025-08-01_a_2026-02-21
+GARMIN_15,Garmin,Fuerza / Gym,Entreno de fuerza,2025-10-15,2025-10-15 20:36:28,0.0,56.1,629.0,138.0,,--,Periodo_07_2025-08-01_a_2026-02-21
+GARMIN_14,Garmin,Ciclismo,Ciclismo en sala,2025-10-15,2025-10-15 21:34:27,0.0,18.53,170.0,117.0,,--,Periodo_07_2025-08-01_a_2026-02-21
+GARMIN_13,Garmin,Running,Carrera,2025-10-19,2025-10-19 20:33:18,8.01,54.87,652.0,133.0,,47,Periodo_07_2025-08-01_a_2026-02-21
+GARMIN_12,Garmin,Natación,Natación en piscina,2025-10-25,2025-10-25 15:39:01,0.55,30.62,187.0,96.0,,--,Periodo_07_2025-08-01_a_2026-02-21
+GARMIN_11,Garmin,Cinta,Entrenamiento en cinta,2025-11-06,2025-11-06 19:17:03,0.95,13.63,98.0,103.0,,--,Periodo_07_2025-08-01_a_2026-02-21
+GARMIN_10,Garmin,Cinta,Entrenamiento en cinta,2025-11-06,2025-11-06 21:20:08,0.41,7.78,75.0,117.0,,--,Periodo_07_2025-08-01_a_2026-02-21
+GARMIN_9,Garmin,Ciclismo,Ciclismo en sala,2025-11-06,2025-11-06 21:31:29,0.0,24.45,284.0,134.0,,--,Periodo_07_2025-08-01_a_2026-02-21
+GARMIN_8,Garmin,Natación,Natación en piscina,2025-11-28,2025-11-28 20:19:53,0.675,48.4,335.0,105.0,,--,Periodo_07_2025-08-01_a_2026-02-21
+GARMIN_7,Garmin,Natación,Natación en piscina,2025-11-29,2025-11-29 15:10:32,1.025,52.85,435.0,112.0,,--,Periodo_07_2025-08-01_a_2026-02-21
+GARMIN_6,Garmin,Senderismo,Senderismo,2025-12-08,2025-12-08 15:51:48,0.23,3.94,46.0,127.0,,22,Periodo_07_2025-08-01_a_2026-02-21
+GARMIN_5,Garmin,Ciclismo,Ciclismo,2025-12-09,2025-12-09 13:12:28,19.74,100.8,775.0,123.0,,347,Periodo_07_2025-08-01_a_2026-02-21
+GARMIN_4,Garmin,Ciclismo,Ciclismo,2025-12-25,2025-12-25 20:33:19,40.44,150.68,1.215,124.0,,135,Periodo_07_2025-08-01_a_2026-02-21
+GARMIN_3,Garmin,Natación,Natación en piscina,2026-01-02,2026-01-02 20:28:58,1.05,1603.77,2.925,114.0,,--,Periodo_07_2025-08-01_a_2026-02-21
+GARMIN_2,Garmin,Running,Carrera,2026-04-01,2026-04-01 00:14:55,10.12,60.6,828.0,149.0,,60,Periodo_09_2026-03-28_a_2026-08-19
+GARMIN_1,Garmin,Natación,Natación en piscina,2026-04-30,2026-04-30 20:09:37,1.075,57.82,548.0,131.0,,--,Periodo_09_2026-03-28_a_2026-08-19
+GARMIN_0,Garmin,Ciclismo,Ciclismo,2026-10-04,2026-10-04 21:41:30,4.29,20.32,128.0,103.0,,19,Post_Periodo_10
