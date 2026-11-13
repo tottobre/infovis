@@ -2,28 +2,135 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width">
-  <title>Mis trabajos de infovis</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tomas Ottobre — InfoVis ITBA</title>
+  
+  <style>
+    /* 1. Fondo suave y tipografía moderna */
+    body {
+      background-color: #f8fafc;
+      color: #0f172a;
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      margin: 0;
+      padding: 40px 20px;
+      line-height: 1.5;
+    }
+
+    /* 2. Contenedor centrado */
+    .container {
+      max-width: 980px;
+      margin: 0 auto;
+    }
+
+    /* 3. Encabezado */
+    .header {
+      text-align: center;
+      margin-bottom: 40px;
+      padding-bottom: 24px;
+      border-bottom: 1px solid #e2e8f0;
+    }
+    .header h1 {
+      font-size: 2.2rem;
+      margin: 0 0 10px 0;
+      color: #0f172a;
+      letter-spacing: -0.02em;
+    }
+    .header p {
+      color: #64748b;
+      font-size: 1.1rem;
+      margin: 0;
+    }
+
+    /* 4. Tarjeta para cada gráfico */
+    .card {
+      background: #ffffff;
+      border-radius: 14px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -2px rgba(0, 0, 0, 0.05);
+      border: 1px solid #e2e8f0;
+      padding: 24px;
+      margin-bottom: 32px;
+      overflow: hidden;
+    }
+
+    /* 5. Títulos de sección */
+    .section-title {
+      font-size: 1.25rem;
+      color: #334155;
+      margin: 40px 0 16px 0;
+      padding-left: 4px;
+      font-weight: 600;
+    }
+
+    /* 6. SVGs adaptables */
+    object {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+  </style>
 </head>
 <body>
-    <h1>Hola Mundo!</h1>
 
-<object type="image/svg+xml" data="viz.svg"></object>
-  <object type="image/svg+xml" data="2do_grafico.svg"></object>
+  <div class="container">
 
-<h1>Grafico de Flourish</h1>
-  <div class="flourish-embed flourish-chart" data-src="visualisation/30757344"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/30757344/thumbnail" width="100%" alt="chart visualization" /></noscript></div>
-<iframe title="¿Qué prefieren los hombres y las mujeres como agregado en su pizza?" aria-label="Range Plot" id="datawrapper-chart-sGgg9" src="https://datawrapper.dwcdn.net/sGgg9/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="451" data-external="1"></iframe><script type="text/javascript">(function(){function e(){window.addEventListener(`message`,function(e){if(e.data[`datawrapper-height`]!==void 0){var t=document.querySelectorAll(`iframe`);for(var n in e.data[`datawrapper-height`])for(var r=0,i;i=t[r];r++)if(i.contentWindow===e.source){var a=e.data[`datawrapper-height`][n]+`px`;i.style.height=a}}})}e()})();</script>
+    <!-- Encabezado de presentación -->
+    <div class="header">
+      <h1>Cuantificación Deportiva y Recomposición Corporal</h1>
+      <p>Tomas Ottobre — Visualización de la Información (ITBA ECD 2026.B)</p>
+    </div>
 
-  <iframe title="¿Cómo impactó la transición del entrenamiento de fuerza a la maratón en mi masa muscular y grasa corporal?" aria-label="Area Chart" id="datawrapper-chart-4Z8NS" src="https://datawrapper.dwcdn.net/4Z8NS/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="502" data-external="1"></iframe><script type="text/javascript">(function(){function e(){window.addEventListener(`message`,function(e){if(e.data[`datawrapper-height`]!==void 0){var t=document.querySelectorAll(`iframe`);for(var n in e.data[`datawrapper-height`])for(var r=0,i;i=t[r];r++)if(i.contentWindow===e.source){var a=e.data[`datawrapper-height`][n]+`px`;i.style.height=a}}})}e()})();</script>
-  <div class="flourish-embed flourish-chart" data-src="visualisation/30911019"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/30911019/thumbnail" width="100%" alt="chart visualization" /></noscript></div><div class="flourish-fallback" data-for="visualisation/30911019"><a href="https://public.flourish.studio/visualisation/30911019/visualisation.json?ref=embed-script">https://public.flourish.studio/visualisation/30911019/visualisation.json?ref=embed-script</a></div>
+    <!-- Título Proyecto Principal -->
+    <div class="section-title">Proyecto: El Atleta Cuantificado (2024–2026)</div>
 
+    <!-- TARJETA 1: Area Chart Datawrapper (Músculo vs Grasa) -->
+    <div class="card">
+      <iframe title="¿Cómo impactó la transición del entrenamiento de fuerza a la maratón en mi masa muscular y grasa corporal?" aria-label="Area Chart" id="datawrapper-chart-4Z8NS" src="https://datawrapper.dwcdn.net/4Z8NS/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="502" data-external="1"></iframe>
+      <script type="text/javascript">(function(){function e(){window.addEventListener(`message`,function(e){if(e.data[`datawrapper-height`]!==void 0){var t=document.querySelectorAll(`iframe`);for(var n in e.data[`datawrapper-height`])for(var r=0,i;i=t[r];r++)if(i.contentWindow===e.source){var a=e.data[`datawrapper-height`][n]+`px`;i.style.height=a}}})}e()})();</script>
+    </div>
 
-<iframe title="¿A qué hora y qué días es mas frecuente el entrenamiento?" aria-label="Table" id="datawrapper-chart-MSxks" src="https://datawrapper.dwcdn.net/MSxks/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="437" data-external="1"></iframe><script type="text/javascript">(function(){function e(){window.addEventListener(`message`,function(e){if(e.data[`datawrapper-height`]!==void 0){var t=document.querySelectorAll(`iframe`);for(var n in e.data[`datawrapper-height`])for(var r=0,i;i=t[r];r++)if(i.contentWindow===e.source){var a=e.data[`datawrapper-height`][n]+`px`;i.style.height=a}}})}e()})();</script>
+    <!-- TARJETA 2: Combo Chart Flourish (Disciplinas vs Masa Magra) -->
+    <div class="card">
+      <div class="flourish-embed flourish-chart" data-src="visualisation/30911019"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/30911019/thumbnail" width="100%" alt="chart visualization" /></noscript></div>
+      <div class="flourish-fallback" data-for="visualisation/30911019"><a href="https://public.flourish.studio/visualisation/30911019/visualisation.json?ref=embed-script">https://public.flourish.studio/visualisation/30911019/visualisation.json?ref=embed-script</a></div>
+    </div>
 
-  <div class="flourish-embed flourish-scatter" data-src="visualisation/30911801"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/30911801/thumbnail" width="100%" alt="scatter visualization" /></noscript></div><div class="flourish-fallback" data-for="visualisation/30911801"><a href="https://public.flourish.studio/visualisation/30911801/visualisation.json?ref=embed-script">https://public.flourish.studio/visualisation/30911801/visualisation.json?ref=embed-script</a></div>
+    <!-- TARJETA 3: Heatmap Datawrapper (Horarios y Días) -->
+    <div class="card">
+      <iframe title="¿A qué hora y qué días es mas frecuente el entrenamiento?" aria-label="Table" id="datawrapper-chart-MSxks" src="https://datawrapper.dwcdn.net/MSxks/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="437" data-external="1"></iframe>
+      <script type="text/javascript">(function(){function e(){window.addEventListener(`message`,function(e){if(e.data[`datawrapper-height`]!==void 0){var t=document.querySelectorAll(`iframe`);for(var n in e.data[`datawrapper-height`])for(var r=0,i;i=t[r];r++)if(i.contentWindow===e.source){var a=e.data[`datawrapper-height`][n]+`px`;i.style.height=a}}})}e()})();</script>
+    </div>
 
-  <object type="image/svg+xml" data="running_maraton.svg"></object>
+    <!-- TARJETA 4: Scatter Plot Flourish (Fisiología de Esfuerzo) -->
+    <div class="card">
+      <div class="flourish-embed flourish-scatter" data-src="visualisation/30911801"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/30911801/thumbnail" width="100%" alt="scatter visualization" /></noscript></div>
+      <div class="flourish-fallback" data-for="visualisation/30911801"><a href="https://public.flourish.studio/visualisation/30911801/visualisation.json?ref=embed-script">https://public.flourish.studio/visualisation/30911801/visualisation.json?ref=embed-script</a></div>
+    </div>
+
+    <!-- TARJETA 5: Bubble Plot SVG RAWGraphs (Running de Maratón) -->
+    <div class="card">
+      <object type="image/svg+xml" data="running_maraton.svg"></object>
+    </div>
+
+    <!-- SECCIÓN: Trabajos de Clase -->
+    <div class="section-title">Trabajos y Prácticas de Clase</div>
+
+    <!-- TARJETA 6: SVGs de clase iniciales -->
+    <div class="card">
+      <object type="image/svg+xml" data="viz.svg"></object>
+      <div style="margin-top: 20px;"></div>
+      <object type="image/svg+xml" data="2do_grafico.svg"></object>
+    </div>
+
+    <!-- TARJETA 7: Gráfico de Pizza Datawrapper y Flourish inicial -->
+    <div class="card">
+      <div class="flourish-embed flourish-chart" data-src="visualisation/30757344"><script src="https://public.flourish.studio/resources/embed.js"></script><noscript><img src="https://public.flourish.studio/visualisation/30757344/thumbnail" width="100%" alt="chart visualization" /></noscript></div>
+      <div style="margin-top: 20px;"></div>
+      <iframe title="¿Qué prefieren los hombres y las mujeres como agregado en su pizza?" aria-label="Range Plot" id="datawrapper-chart-sGgg9" src="https://datawrapper.dwcdn.net/sGgg9/1/" scrolling="no" frameborder="0" style="width: 0; min-width: 100% !important; border: none;" height="451" data-external="1"></iframe>
+      <script type="text/javascript">(function(){function e(){window.addEventListener(`message`,function(e){if(e.data[`datawrapper-height`]!==void 0){var t=document.querySelectorAll(`iframe`);for(var n in e.data[`datawrapper-height`])for(var r=0,i;i=t[r];r++)if(i.contentWindow===e.source){var a=e.data[`datawrapper-height`][n]+`px`;i.style.height=a}}})}e()})();</script>
+    </div>
+
+  </div>
 
 </body>
 </html>
