@@ -1,6 +1,6 @@
-# De Gymrat a correr una maratón: cuerpo y hábitos
+# La anatomía de una maratón: el cuerpo bajo la lupa
 
-> **Trabajo Práctico:** Visualización de Datos Personales  
+> **Tema:** Cuerpo y hábitos en 9 meses de biometría y entrenamiento hacia los 42K  
 > **Carrera:** Maestría en Ciencia de Datos (MCD) / Especialización en Ciencia de Datos (ECD) — ITBA  
 > **Materia:** Visualización de la Información  
 > **Profesor:** Ariel Aizemberg  
