@@ -1,0 +1,223 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 580" width="100%" height="100%" style="background:#ffffff; font-family:'Plus Jakarta Sans', Arial, sans-serif;">
+<style>
+  .axis-grid { stroke: #f1f5f9; stroke-width: 1; stroke-dasharray: 4,4; }
+  .zone-band { opacity: 0.12; }
+  .col-divider { stroke: #e2e8f0; stroke-width: 1; stroke-dasharray: 6,4; }
+  .axis-text { font-size: 11px; fill: #64748b; font-family: inherit; }
+  .col-title { font-size: 13px; font-weight: 800; fill: #0f172a; text-anchor: middle; }
+  .col-sub { font-size: 10px; fill: #64748b; text-anchor: middle; }
+  .title-text { font-size: 18px; font-weight: 800; fill: #0f172a; }
+  .subtitle-text { font-size: 12px; fill: #64748b; }
+  .legend-text { font-size: 11px; font-weight: 600; fill: #334155; }
+  circle.bee-dot {
+    cursor: pointer;
+    transition: transform 0.2s ease, stroke-width 0.2s ease;
+  }
+  circle.bee-dot:hover {
+    stroke: #0f172a !important;
+    stroke-width: 3px !important;
+    fill-opacity: 1 !important;
+  }
+</style>
+
+
+<text x="80" y="32" class="title-text">La cascada cardiovascular: ¿Cómo cayó el esfuerzo cardíaco?</text>
+<text x="80" y="52" class="subtitle-text">Enjambre de 43 sesiones (RAWGraphs Beeswarm) agrupadas por fase. El corazón pasó de Zona 4 roja (148 bpm) a Zona 2 verde (123 bpm en 42K).</text>
+
+<rect x="80" y="85" width="870" height="127.69230769230768" fill="#ef4444" class="zone-band" />
+<text x="940" y="101" text-anchor="end" font-size="10" font-weight="800" fill="#dc2626">ZONA 4: UMBRAL / ALTA EXIGENCIA (≥145 BPM)</text>
+<rect x="80" y="212.69230769230768" width="870" height="95.76923076923077" fill="#f59e0b" class="zone-band" />
+<text x="940" y="228.69230769230768" text-anchor="end" font-size="10" font-weight="800" fill="#d97706">ZONA 3: AERÓBICA MODERADA (130-144 BPM)</text>
+<rect x="80" y="308.46153846153845" width="870" height="191.53846153846155" fill="#10b981" class="zone-band" />
+<text x="940" y="324.46153846153845" text-anchor="end" font-size="10" font-weight="800" fill="#059669">ZONA 2: BASE EFICIENTE / QUEMA GRASAS (&lt;130 BPM)</text>
+<line x1="80" y1="436.15384615384613" x2="950" y2="436.15384615384613" class="axis-grid" />
+<text x="68" y="440.15384615384613" text-anchor="end" class="axis-text" font-weight="600">110 bpm</text>
+<line x1="80" y1="372.3076923076923" x2="950" y2="372.3076923076923" class="axis-grid" />
+<text x="68" y="376.3076923076923" text-anchor="end" class="axis-text" font-weight="600">120 bpm</text>
+<line x1="80" y1="308.46153846153845" x2="950" y2="308.46153846153845" class="axis-grid" />
+<text x="68" y="312.46153846153845" text-anchor="end" class="axis-text" font-weight="600">130 bpm</text>
+<line x1="80" y1="244.6153846153846" x2="950" y2="244.6153846153846" class="axis-grid" />
+<text x="68" y="248.6153846153846" text-anchor="end" class="axis-text" font-weight="600">140 bpm</text>
+<line x1="80" y1="180.76923076923077" x2="950" y2="180.76923076923077" class="axis-grid" />
+<text x="68" y="184.76923076923077" text-anchor="end" class="axis-text" font-weight="600">150 bpm</text>
+<line x1="80" y1="116.9230769230769" x2="950" y2="116.9230769230769" class="axis-grid" />
+<text x="68" y="120.9230769230769" text-anchor="end" class="axis-text" font-weight="600">160 bpm</text>
+<text x="188.75" y="522" class="col-title">1. Base (May-Jun)</text>
+<text x="188.75" y="538" class="col-sub">9 sesiones • Media: 149 bpm</text>
+<line x1="297.5" y1="85" x2="297.5" y2="500" class="col-divider" />
+<text x="406.25" y="522" class="col-title">2. Carga (Julio)</text>
+<text x="406.25" y="538" class="col-sub">10 sesiones • Media: 140 bpm</text>
+<line x1="515.0" y1="85" x2="515.0" y2="500" class="col-divider" />
+<text x="623.75" y="522" class="col-title">3. Picos de Fondo (Ago)</text>
+<text x="623.75" y="538" class="col-sub">19 sesiones • Media: 128 bpm</text>
+<line x1="732.5" y1="85" x2="732.5" y2="500" class="col-divider" />
+<text x="841.25" y="522" class="col-title">4. Maratón 42K (Sep)</text>
+<text x="841.25" y="538" class="col-sub">5 sesiones • Media: 124 bpm</text>
+<circle class="bee-dot" cx="188.8" cy="219.1" r="8.5" fill="#f59e0b" fill-opacity="0.88" stroke="#ffffff" stroke-width="1.5">
+  <title>1. Base (Mayo-Junio) • 2025-05-31&#10;Distancia: 8.84 km (Rodaje / Regenerativo (<12 km))&#10;FC Media: 144 bpm&#10;Ritmo: 7:19 min/km&#10;Gasto: 639 kcal</title>
+</circle>
+<circle class="bee-dot" cx="206.8" cy="212.7" r="7.0" fill="#ef4444" fill-opacity="0.88" stroke="#ffffff" stroke-width="1.5">
+  <title>1. Base (Mayo-Junio) • 2025-06-19&#10;Distancia: 2.13 km (Rodaje / Regenerativo (<12 km))&#10;FC Media: 145 bpm&#10;Ritmo: 6:43 min/km&#10;Gasto: 156 kcal</title>
+</circle>
+<circle class="bee-dot" cx="172.8" cy="206.3" r="9.0" fill="#ef4444" fill-opacity="0.88" stroke="#ffffff" stroke-width="1.5">
+  <title>1. Base (Mayo-Junio) • 2025-05-25&#10;Distancia: 10.06 km (Rodaje / Regenerativo (<12 km))&#10;FC Media: 146 bpm&#10;Ritmo: 5:27 min/km&#10;Gasto: 750 kcal</title>
+</circle>
+<circle class="bee-dot" cx="220.8" cy="199.9" r="9.2" fill="#ef4444" fill-opacity="0.88" stroke="#ffffff" stroke-width="1.5">
+  <title>1. Base (Mayo-Junio) • 2025-05-10&#10;Distancia: 11.04 km (Rodaje / Regenerativo (<12 km))&#10;FC Media: 147 bpm&#10;Ritmo: 8:38 min/km&#10;Gasto: 789 kcal</title>
+</circle>
+<circle class="bee-dot" cx="188.8" cy="193.5" r="7.0" fill="#ef4444" fill-opacity="0.88" stroke="#ffffff" stroke-width="1.5">
+  <title>1. Base (Mayo-Junio) • 2025-05-18&#10;Distancia: 4.14 km (Rodaje / Regenerativo (<12 km))&#10;FC Media: 148 bpm&#10;Ritmo: 5:35 min/km&#10;Gasto: 307 kcal</title>
+</circle>
+<circle class="bee-dot" cx="166.8" cy="187.2" r="8.7" fill="#ef4444" fill-opacity="0.88" stroke="#ffffff" stroke-width="1.5">
+  <title>1. Base (Mayo-Junio) • 2025-06-21&#10;Distancia: 9.37 km (Rodaje / Regenerativo (<12 km))&#10;FC Media: 149 bpm&#10;Ritmo: 7:01 min/km&#10;Gasto: 683 kcal</title>
+</circle>
+<circle class="bee-dot" cx="188.8" cy="168.0" r="8.0" fill="#ef4444" fill-opacity="0.88" stroke="#ffffff" stroke-width="1.5">
+  <title>1. Base (Mayo-Junio) • 2025-06-19&#10;Distancia: 7.54 km (Rodaje / Regenerativo (<12 km))&#10;FC Media: 152 bpm&#10;Ritmo: 17:54 min/km&#10;Gasto: 532 kcal</title>
+</circle>
+<circle class="bee-dot" cx="200.8" cy="155.2" r="7.0" fill="#ef4444" fill-opacity="0.88" stroke="#ffffff" stroke-width="1.5">
+  <title>1. Base (Mayo-Junio) • 2025-05-18&#10;Distancia: 2.13 km (Rodaje / Regenerativo (<12 km))&#10;FC Media: 154 bpm&#10;Ritmo: 6:26 min/km&#10;Gasto: 172 kcal</title>
+</circle>
+<circle class="bee-dot" cx="172.8" cy="155.2" r="10.2" fill="#ef4444" fill-opacity="0.88" stroke="#ffffff" stroke-width="1.5">
+  <title>1. Base (Mayo-Junio) • 2025-06-28&#10;Distancia: 14.25 km (Medio Fondo (12-19 km))&#10;FC Media: 154 bpm&#10;Ritmo: 7:14 min/km&#10;Gasto: 1036 kcal</title>
+</circle>
+<circle class="bee-dot" cx="406.2" cy="372.3" r="8.9" fill="#10b981" fill-opacity="0.88" stroke="#ffffff" stroke-width="1.5">
+  <title>2. Carga (Julio) • 2025-07-30&#10;Distancia: 9.62 km (Rodaje / Regenerativo (<12 km))&#10;FC Media: 120 bpm&#10;Ritmo: 6:23 min/km&#10;Gasto: 725 kcal</title>
+</circle>
+<circle class="bee-dot" cx="424.2" cy="365.9" r="7.3" fill="#10b981" fill-opacity="0.88" stroke="#ffffff" stroke-width="1.5">
+  <title>2. Carga (Julio) • 2025-07-23&#10;Distancia: 4.36 km (Rodaje / Regenerativo (<12 km))&#10;FC Media: 121 bpm&#10;Ritmo: 10:04 min/km&#10;Gasto: 375 kcal</title>
+</circle>
+<circle class="bee-dot" cx="406.2" cy="289.3" r="9.7" fill="#f59e0b" fill-opacity="0.88" stroke="#ffffff" stroke-width="1.5">
+  <title>2. Carga (Julio) • 2025-07-22&#10;Distancia: 12.72 km (Medio Fondo (12-19 km))&#10;FC Media: 133 bpm&#10;Ritmo: 6:54 min/km&#10;Gasto: 906 kcal</title>
+</circle>
+<circle class="bee-dot" cx="434.2" cy="289.3" r="14.7" fill="#f59e0b" fill-opacity="0.88" stroke="#ffffff" stroke-width="1.5">
+  <title>2. Carga (Julio) • 2025-07-26&#10;Distancia: 23.96 km (Fondo Largo (≥20 km))&#10;FC Media: 133 bpm&#10;Ritmo: 6:44 min/km&#10;Gasto: 2047 kcal</title>
+</circle>
+<circle class="bee-dot" cx="406.2" cy="212.7" r="7.8" fill="#ef4444" fill-opacity="0.88" stroke="#ffffff" stroke-width="1.5">
+  <title>2. Carga (Julio) • 2025-07-28&#10;Distancia: 6.46 km (Rodaje / Regenerativo (<12 km))&#10;FC Media: 145 bpm&#10;Ritmo: 5:21 min/km&#10;Gasto: 484 kcal</title>
+</circle>
+<circle class="bee-dot" cx="422.2" cy="206.3" r="7.0" fill="#ef4444" fill-opacity="0.88" stroke="#ffffff" stroke-width="1.5">
+  <title>2. Carga (Julio) • 2025-07-15&#10;Distancia: 4.27 km (Rodaje / Regenerativo (<12 km))&#10;FC Media: 146 bpm&#10;Ritmo: 6:04 min/km&#10;Gasto: 303 kcal</title>
+</circle>
+<circle class="bee-dot" cx="406.2" cy="187.2" r="7.8" fill="#ef4444" fill-opacity="0.88" stroke="#ffffff" stroke-width="1.5">
+  <title>2. Carga (Julio) • 2025-07-09&#10;Distancia: 6.71 km (Rodaje / Regenerativo (<12 km))&#10;FC Media: 149 bpm&#10;Ritmo: 7:14 min/km&#10;Gasto: 475 kcal</title>
+</circle>
+<circle class="bee-dot" cx="426.2" cy="180.8" r="9.5" fill="#ef4444" fill-opacity="0.88" stroke="#ffffff" stroke-width="1.5">
+  <title>2. Carga (Julio) • 2025-07-12&#10;Distancia: 11.68 km (Rodaje / Regenerativo (<12 km))&#10;FC Media: 150 bpm&#10;Ritmo: 6:27 min/km&#10;Gasto: 858 kcal</title>
+</circle>
+<circle class="bee-dot" cx="384.2" cy="180.8" r="11.4" fill="#ef4444" fill-opacity="0.88" stroke="#ffffff" stroke-width="1.5">
+  <title>2. Carga (Julio) • 2025-07-19&#10;Distancia: 17.56 km (Medio Fondo (12-19 km))&#10;FC Media: 150 bpm&#10;Ritmo: 6:24 min/km&#10;Gasto: 1297 kcal</title>
+</circle>
+<circle class="bee-dot" cx="406.2" cy="161.6" r="8.2" fill="#ef4444" fill-opacity="0.88" stroke="#ffffff" stroke-width="1.5">
+  <title>2. Carga (Julio) • 2025-07-15&#10;Distancia: 7.91 km (Rodaje / Regenerativo (<12 km))&#10;FC Media: 153 bpm&#10;Ritmo: 7:04 min/km&#10;Gasto: 572 kcal</title>
+</circle>
+<circle class="bee-dot" cx="623.8" cy="480.8" r="8.2" fill="#10b981" fill-opacity="0.88" stroke="#ffffff" stroke-width="1.5">
+  <title>3. Picos de Fondo (Agosto) • 2025-08-21&#10;Distancia: 6.72 km (Rodaje / Regenerativo (<12 km))&#10;FC Media: 103 bpm&#10;Ritmo: 10:20 min/km&#10;Gasto: 571 kcal</title>
+</circle>
+<circle class="bee-dot" cx="623.8" cy="385.1" r="7.5" fill="#10b981" fill-opacity="0.88" stroke="#ffffff" stroke-width="1.5">
+  <title>3. Picos de Fondo (Agosto) • 2025-08-04&#10;Distancia: 5.17 km (Rodaje / Regenerativo (<12 km))&#10;FC Media: 118 bpm&#10;Ritmo: 6:50 min/km&#10;Gasto: 404 kcal</title>
+</circle>
+<circle class="bee-dot" cx="641.8" cy="385.1" r="7.4" fill="#10b981" fill-opacity="0.88" stroke="#ffffff" stroke-width="1.5">
+  <title>3. Picos de Fondo (Agosto) • 2025-08-11&#10;Distancia: 5.14 km (Rodaje / Regenerativo (<12 km))&#10;FC Media: 118 bpm&#10;Ritmo: 7:23 min/km&#10;Gasto: 394 kcal</title>
+</circle>
+<circle class="bee-dot" cx="627.8" cy="365.9" r="9.8" fill="#10b981" fill-opacity="0.88" stroke="#ffffff" stroke-width="1.5">
+  <title>3. Picos de Fondo (Agosto) • 2025-08-06&#10;Distancia: 12.01 km (Medio Fondo (12-19 km))&#10;FC Media: 121 bpm&#10;Ritmo: 8:46 min/km&#10;Gasto: 943 kcal</title>
+</circle>
+<circle class="bee-dot" cx="611.8" cy="353.2" r="7.9" fill="#10b981" fill-opacity="0.88" stroke="#ffffff" stroke-width="1.5">
+  <title>3. Picos de Fondo (Agosto) • 2025-08-02&#10;Distancia: 5.31 km (Rodaje / Regenerativo (<12 km))&#10;FC Media: 123 bpm&#10;Ritmo: 9:04 min/km&#10;Gasto: 506 kcal</title>
+</circle>
+<circle class="bee-dot" cx="639.8" cy="346.8" r="10.0" fill="#10b981" fill-opacity="0.88" stroke="#ffffff" stroke-width="1.5">
+  <title>3. Picos de Fondo (Agosto) • 2025-08-24&#10;Distancia: 12.36 km (Medio Fondo (12-19 km))&#10;FC Media: 124 bpm&#10;Ritmo: 6:17 min/km&#10;Gasto: 975 kcal</title>
+</circle>
+<circle class="bee-dot" cx="593.8" cy="346.8" r="8.5" fill="#10b981" fill-opacity="0.88" stroke="#ffffff" stroke-width="1.5">
+  <title>3. Picos de Fondo (Agosto) • 2025-08-25&#10;Distancia: 8.3 km (Rodaje / Regenerativo (<12 km))&#10;FC Media: 124 bpm&#10;Ritmo: 6:54 min/km&#10;Gasto: 636 kcal</title>
+</circle>
+<circle class="bee-dot" cx="659.8" cy="346.8" r="7.0" fill="#10b981" fill-opacity="0.88" stroke="#ffffff" stroke-width="1.5">
+  <title>3. Picos de Fondo (Agosto) • 2025-08-30&#10;Distancia: 2.11 km (Rodaje / Regenerativo (<12 km))&#10;FC Media: 124 bpm&#10;Ritmo: 6:17 min/km&#10;Gasto: 161 kcal</title>
+</circle>
+<circle class="bee-dot" cx="621.8" cy="334.0" r="9.2" fill="#10b981" fill-opacity="0.88" stroke="#ffffff" stroke-width="1.5">
+  <title>3. Picos de Fondo (Agosto) • 2025-08-13&#10;Distancia: 10.39 km (Rodaje / Regenerativo (<12 km))&#10;FC Media: 126 bpm&#10;Ritmo: 6:23 min/km&#10;Gasto: 805 kcal</title>
+</circle>
+<circle class="bee-dot" cx="577.8" cy="334.0" r="8.8" fill="#10b981" fill-opacity="0.88" stroke="#ffffff" stroke-width="1.5">
+  <title>3. Picos de Fondo (Agosto) • 2025-08-14&#10;Distancia: 9.46 km (Rodaje / Regenerativo (<12 km))&#10;FC Media: 126 bpm&#10;Ritmo: 6:14 min/km&#10;Gasto: 719 kcal</title>
+</circle>
+<circle class="bee-dot" cx="601.8" cy="327.6" r="9.3" fill="#10b981" fill-opacity="0.88" stroke="#ffffff" stroke-width="1.5">
+  <title>3. Picos de Fondo (Agosto) • 2025-08-18&#10;Distancia: 10.79 km (Rodaje / Regenerativo (<12 km))&#10;FC Media: 127 bpm&#10;Ritmo: 5:58 min/km&#10;Gasto: 814 kcal</title>
+</circle>
+<circle class="bee-dot" cx="637.8" cy="321.2" r="8.7" fill="#10b981" fill-opacity="0.88" stroke="#ffffff" stroke-width="1.5">
+  <title>3. Picos de Fondo (Agosto) • 2025-08-20&#10;Distancia: 8.21 km (Rodaje / Regenerativo (<12 km))&#10;FC Media: 128 bpm&#10;Ritmo: 7:13 min/km&#10;Gasto: 695 kcal</title>
+</circle>
+<circle class="bee-dot" cx="661.8" cy="314.8" r="13.0" fill="#10b981" fill-opacity="0.88" stroke="#ffffff" stroke-width="1.5">
+  <title>3. Picos de Fondo (Agosto) • 2025-08-24&#10;Distancia: 21.37 km (Fondo Largo (≥20 km))&#10;FC Media: 129 bpm&#10;Ritmo: 5:59 min/km&#10;Gasto: 1661 kcal</title>
+</circle>
+<circle class="bee-dot" cx="623.8" cy="289.3" r="10.7" fill="#f59e0b" fill-opacity="0.88" stroke="#ffffff" stroke-width="1.5">
+  <title>3. Picos de Fondo (Agosto) • 2025-08-03&#10;Distancia: 15.12 km (Medio Fondo (12-19 km))&#10;FC Media: 133 bpm&#10;Ritmo: 5:14 min/km&#10;Gasto: 1139 kcal</title>
+</circle>
+
+<g transform="translate(536.75, 255.30769230769232)">
+  <rect width="110" height="24" rx="4" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1" />
+  <text x="55" y="12" text-anchor="middle" font-size="9" font-weight="700" fill="#0f172a">Fondo 32.2 km</text>
+  <text x="55" y="21" text-anchor="middle" font-size="8" fill="#64748b">FC 133 bpm</text>
+</g>
+
+<circle class="bee-dot" cx="591.8" cy="289.3" r="17.4" fill="#f59e0b" fill-opacity="0.88" stroke="#ffffff" stroke-width="1.5">
+  <title>3. Picos de Fondo (Agosto) • 2025-08-16&#10;Distancia: 32.2 km (Fondo Largo (≥20 km))&#10;FC Media: 133 bpm&#10;Ritmo: 6:26 min/km&#10;Gasto: 2675 kcal</title>
+</circle>
+<circle class="bee-dot" cx="641.8" cy="276.5" r="8.1" fill="#f59e0b" fill-opacity="0.88" stroke="#ffffff" stroke-width="1.5">
+  <title>3. Picos de Fondo (Agosto) • 2025-08-28&#10;Distancia: 7.15 km (Rodaje / Regenerativo (<12 km))&#10;FC Media: 135 bpm&#10;Ritmo: 5:57 min/km&#10;Gasto: 557 kcal</title>
+</circle>
+
+<g transform="translate(612.75, 229.76923076923077)">
+  <rect width="110" height="24" rx="4" fill="#f8fafc" stroke="#cbd5e1" stroke-width="1" />
+  <text x="55" y="12" text-anchor="middle" font-size="9" font-weight="700" fill="#0f172a">Fondo 31.39 km</text>
+  <text x="55" y="21" text-anchor="middle" font-size="8" fill="#64748b">FC 137 bpm</text>
+</g>
+
+<circle class="bee-dot" cx="667.8" cy="263.8" r="17.5" fill="#f59e0b" fill-opacity="0.88" stroke="#ffffff" stroke-width="1.5">
+  <title>3. Picos de Fondo (Agosto) • 2025-08-09&#10;Distancia: 31.39 km (Fondo Largo (≥20 km))&#10;FC Media: 137 bpm&#10;Ritmo: 6:43 min/km&#10;Gasto: 2680 kcal</title>
+</circle>
+<circle class="bee-dot" cx="623.8" cy="225.5" r="15.0" fill="#f59e0b" fill-opacity="0.88" stroke="#ffffff" stroke-width="1.5">
+  <title>3. Picos de Fondo (Agosto) • 2025-08-30&#10;Distancia: 26.04 km (Fondo Largo (≥20 km))&#10;FC Media: 143 bpm&#10;Ritmo: 5:40 min/km&#10;Gasto: 2112 kcal</title>
+</circle>
+<circle class="bee-dot" cx="623.8" cy="129.7" r="8.2" fill="#ef4444" fill-opacity="0.88" stroke="#ffffff" stroke-width="1.5">
+  <title>3. Picos de Fondo (Agosto) • 2025-08-03&#10;Distancia: 6.38 km (Rodaje / Regenerativo (<12 km))&#10;FC Media: 158 bpm&#10;Ritmo: 5:56 min/km&#10;Gasto: 572 kcal</title>
+</circle>
+<circle class="bee-dot" cx="841.2" cy="372.3" r="7.9" fill="#10b981" fill-opacity="0.88" stroke="#ffffff" stroke-width="1.5">
+  <title>4. Tapering y Maratón (Sep) • 2025-09-04&#10;Distancia: 7.04 km (Rodaje / Regenerativo (<12 km))&#10;FC Media: 120 bpm&#10;Ritmo: 6:28 min/km&#10;Gasto: 510 kcal</title>
+</circle>
+<circle class="bee-dot" cx="849.2" cy="353.2" r="10.7" fill="#10b981" fill-opacity="0.88" stroke="#ffffff" stroke-width="1.5">
+  <title>4. Tapering y Maratón (Sep) • 2025-09-13&#10;Distancia: 14.06 km (Medio Fondo (12-19 km))&#10;FC Media: 123 bpm&#10;Ritmo: 6:16 min/km&#10;Gasto: 1146 kcal</title>
+</circle>
+<circle cx="813.2" cy="353.2" r="28.0" fill="none" stroke="#f59e0b" stroke-width="2.5" stroke-dasharray="4,3" />
+
+<g transform="translate(738.25, 311.15384615384613)">
+  <rect width="150" height="30" rx="6" fill="#ecfdf5" stroke="#10b981" stroke-width="1.5" />
+  <text x="75" y="14" text-anchor="middle" font-size="10" font-weight="800" fill="#065f46">🏆 Maratón 42.2 km</text>
+  <text x="75" y="24" text-anchor="middle" font-size="8.5" font-weight="700" fill="#047857">123 bpm • 3.279 kcal</text>
+</g>
+
+<circle class="bee-dot" cx="813.2" cy="353.2" r="22.0" fill="#10b981" fill-opacity="0.88" stroke="#ffffff" stroke-width="1.5">
+  <title>4. Tapering y Maratón (Sep) • 2025-09-21&#10;Distancia: 42.5 km (Maratón Oficial)&#10;FC Media: 123 bpm&#10;Ritmo: 5:57 min/km&#10;Gasto: 3279 kcal</title>
+</circle>
+<circle class="bee-dot" cx="869.2" cy="346.8" r="7.5" fill="#10b981" fill-opacity="0.88" stroke="#ffffff" stroke-width="1.5">
+  <title>4. Tapering y Maratón (Sep) • 2025-09-15&#10;Distancia: 5.14 km (Rodaje / Regenerativo (<12 km))&#10;FC Media: 124 bpm&#10;Ritmo: 6:43 min/km&#10;Gasto: 403 kcal</title>
+</circle>
+<circle class="bee-dot" cx="841.2" cy="244.6" r="7.9" fill="#f59e0b" fill-opacity="0.88" stroke="#ffffff" stroke-width="1.5">
+  <title>4. Tapering y Maratón (Sep) • 2025-09-18&#10;Distancia: 6.36 km (Rodaje / Regenerativo (<12 km))&#10;FC Media: 140 bpm&#10;Ritmo: 6:14 min/km&#10;Gasto: 513 kcal</title>
+</circle>
+
+<g transform="translate(80, 558)">
+  <text x="0" y="11" class="legend-text" font-weight="800">Zona Cardíaca:</text>
+  <circle cx="110" cy="7" r="7" fill="#ef4444" stroke="#fff" stroke-width="1.5" />
+  <text x="122" y="11" class="legend-text">Zona 4 (≥145 bpm)</text>
+  <circle cx="270" cy="7" r="7" fill="#f59e0b" stroke="#fff" stroke-width="1.5" />
+  <text x="282" y="11" class="legend-text">Zona 3 (130-144 bpm)</text>
+  <circle cx="450" cy="7" r="7" fill="#10b981" stroke="#fff" stroke-width="1.5" />
+  <text x="462" y="11" class="legend-text">Zona 2 (&lt;130 bpm)</text>
+  <text x="640" y="11" class="legend-text" font-weight="800">Tamaño:</text>
+  <circle cx="700" cy="7" r="4" fill="#94a3b8" />
+  <circle cx="720" cy="7" r="9" fill="#94a3b8" />
+  <circle cx="750" cy="7" r="15" fill="#94a3b8" />
+  <text x="775" y="11" class="legend-text">Calorías (400 a 3.279 kcal)</text>
+</g>
+
+</svg>

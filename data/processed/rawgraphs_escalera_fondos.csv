@@ -1,0 +1,44 @@
+Fecha,Distancia_km,FC_Media_bpm,Zona_Cardiaca,Color_Zona,Fase,Tipo_Sesion,Ritmo_min_km,Calorias_kcal,Duracion_min
+2025-05-10,11.04,147,Zona 4 - Umbral (≥145 bpm),#ef4444,1. Base (Mayo-Junio),Rodaje / Regenerativo (<12 km),8:38,789,95.4
+2025-05-18,2.13,154,Zona 4 - Umbral (≥145 bpm),#ef4444,1. Base (Mayo-Junio),Rodaje / Regenerativo (<12 km),6:26,172,13.7
+2025-05-18,4.14,148,Zona 4 - Umbral (≥145 bpm),#ef4444,1. Base (Mayo-Junio),Rodaje / Regenerativo (<12 km),5:35,307,23.1
+2025-05-25,10.06,146,Zona 4 - Umbral (≥145 bpm),#ef4444,1. Base (Mayo-Junio),Rodaje / Regenerativo (<12 km),5:27,750,54.9
+2025-05-31,8.84,144,Zona 3 - Moderada (130-144 bpm),#f59e0b,1. Base (Mayo-Junio),Rodaje / Regenerativo (<12 km),7:19,639,64.7
+2025-06-19,7.54,152,Zona 4 - Umbral (≥145 bpm),#ef4444,1. Base (Mayo-Junio),Rodaje / Regenerativo (<12 km),17:54,532,135.0
+2025-06-19,2.13,145,Zona 4 - Umbral (≥145 bpm),#ef4444,1. Base (Mayo-Junio),Rodaje / Regenerativo (<12 km),6:43,156,14.3
+2025-06-21,9.37,149,Zona 4 - Umbral (≥145 bpm),#ef4444,1. Base (Mayo-Junio),Rodaje / Regenerativo (<12 km),7:01,683,65.8
+2025-06-28,14.25,154,Zona 4 - Umbral (≥145 bpm),#ef4444,1. Base (Mayo-Junio),Medio Fondo (12-19 km),7:14,1036,103.2
+2025-07-09,6.71,149,Zona 4 - Umbral (≥145 bpm),#ef4444,2. Carga (Julio),Rodaje / Regenerativo (<12 km),7:14,475,48.6
+2025-07-12,11.68,150,Zona 4 - Umbral (≥145 bpm),#ef4444,2. Carga (Julio),Rodaje / Regenerativo (<12 km),6:27,858,75.4
+2025-07-15,4.27,146,Zona 4 - Umbral (≥145 bpm),#ef4444,2. Carga (Julio),Rodaje / Regenerativo (<12 km),6:04,303,25.9
+2025-07-15,7.91,153,Zona 4 - Umbral (≥145 bpm),#ef4444,2. Carga (Julio),Rodaje / Regenerativo (<12 km),7:04,572,56.0
+2025-07-19,17.56,150,Zona 4 - Umbral (≥145 bpm),#ef4444,2. Carga (Julio),Medio Fondo (12-19 km),6:24,1297,112.6
+2025-07-22,12.72,133,Zona 3 - Moderada (130-144 bpm),#f59e0b,2. Carga (Julio),Medio Fondo (12-19 km),6:54,906,87.9
+2025-07-23,4.36,121,Zona 2 - Eficiente (<130 bpm),#10b981,2. Carga (Julio),Rodaje / Regenerativo (<12 km),10:04,375,43.9
+2025-07-26,23.96,133,Zona 3 - Moderada (130-144 bpm),#f59e0b,2. Carga (Julio),Fondo Largo (≥20 km),6:44,2047,161.5
+2025-07-28,6.46,145,Zona 4 - Umbral (≥145 bpm),#ef4444,2. Carga (Julio),Rodaje / Regenerativo (<12 km),5:21,484,34.6
+2025-07-30,9.62,120,Zona 2 - Eficiente (<130 bpm),#10b981,2. Carga (Julio),Rodaje / Regenerativo (<12 km),6:23,725,61.5
+2025-08-02,5.31,123,Zona 2 - Eficiente (<130 bpm),#10b981,3. Picos de Fondo (Agosto),Rodaje / Regenerativo (<12 km),9:04,506,48.2
+2025-08-03,6.38,158,Zona 4 - Umbral (≥145 bpm),#ef4444,3. Picos de Fondo (Agosto),Rodaje / Regenerativo (<12 km),5:56,572,37.9
+2025-08-03,15.12,133,Zona 3 - Moderada (130-144 bpm),#f59e0b,3. Picos de Fondo (Agosto),Medio Fondo (12-19 km),5:14,1139,79.3
+2025-08-04,5.17,118,Zona 2 - Eficiente (<130 bpm),#10b981,3. Picos de Fondo (Agosto),Rodaje / Regenerativo (<12 km),6:50,404,35.3
+2025-08-06,12.01,121,Zona 2 - Eficiente (<130 bpm),#10b981,3. Picos de Fondo (Agosto),Medio Fondo (12-19 km),8:46,943,105.4
+2025-08-09,31.39,137,Zona 3 - Moderada (130-144 bpm),#f59e0b,3. Picos de Fondo (Agosto),Fondo Largo (≥20 km),6:43,2680,211.1
+2025-08-11,5.14,118,Zona 2 - Eficiente (<130 bpm),#10b981,3. Picos de Fondo (Agosto),Rodaje / Regenerativo (<12 km),7:23,394,38.0
+2025-08-13,10.39,126,Zona 2 - Eficiente (<130 bpm),#10b981,3. Picos de Fondo (Agosto),Rodaje / Regenerativo (<12 km),6:23,805,66.4
+2025-08-14,9.46,126,Zona 2 - Eficiente (<130 bpm),#10b981,3. Picos de Fondo (Agosto),Rodaje / Regenerativo (<12 km),6:14,719,59.0
+2025-08-16,32.2,133,Zona 3 - Moderada (130-144 bpm),#f59e0b,3. Picos de Fondo (Agosto),Fondo Largo (≥20 km),6:26,2675,207.2
+2025-08-18,10.79,127,Zona 2 - Eficiente (<130 bpm),#10b981,3. Picos de Fondo (Agosto),Rodaje / Regenerativo (<12 km),5:58,814,64.5
+2025-08-20,8.21,128,Zona 2 - Eficiente (<130 bpm),#10b981,3. Picos de Fondo (Agosto),Rodaje / Regenerativo (<12 km),7:13,695,59.3
+2025-08-21,6.72,103,Zona 2 - Eficiente (<130 bpm),#10b981,3. Picos de Fondo (Agosto),Rodaje / Regenerativo (<12 km),10:20,571,69.5
+2025-08-24,21.37,129,Zona 2 - Eficiente (<130 bpm),#10b981,3. Picos de Fondo (Agosto),Fondo Largo (≥20 km),5:59,1661,128.1
+2025-08-24,12.36,124,Zona 2 - Eficiente (<130 bpm),#10b981,3. Picos de Fondo (Agosto),Medio Fondo (12-19 km),6:17,975,77.8
+2025-08-25,8.3,124,Zona 2 - Eficiente (<130 bpm),#10b981,3. Picos de Fondo (Agosto),Rodaje / Regenerativo (<12 km),6:54,636,57.3
+2025-08-28,7.15,135,Zona 3 - Moderada (130-144 bpm),#f59e0b,3. Picos de Fondo (Agosto),Rodaje / Regenerativo (<12 km),5:57,557,42.5
+2025-08-30,26.04,143,Zona 3 - Moderada (130-144 bpm),#f59e0b,3. Picos de Fondo (Agosto),Fondo Largo (≥20 km),5:40,2112,147.8
+2025-08-30,2.11,124,Zona 2 - Eficiente (<130 bpm),#10b981,3. Picos de Fondo (Agosto),Rodaje / Regenerativo (<12 km),6:17,161,13.3
+2025-09-04,7.04,120,Zona 2 - Eficiente (<130 bpm),#10b981,4. Tapering (Sep 1-20),Rodaje / Regenerativo (<12 km),6:28,510,45.6
+2025-09-13,14.06,123,Zona 2 - Eficiente (<130 bpm),#10b981,4. Tapering (Sep 1-20),Medio Fondo (12-19 km),6:16,1146,88.2
+2025-09-15,5.14,124,Zona 2 - Eficiente (<130 bpm),#10b981,4. Tapering (Sep 1-20),Rodaje / Regenerativo (<12 km),6:43,403,34.5
+2025-09-18,6.36,140,Zona 3 - Moderada (130-144 bpm),#f59e0b,4. Tapering (Sep 1-20),Rodaje / Regenerativo (<12 km),6:14,513,39.7
+2025-09-21,42.5,123,Zona 2 - Eficiente (<130 bpm),#10b981,5. Maratón 42K (21 Sep),Maratón Oficial,5:57,3279,253.4

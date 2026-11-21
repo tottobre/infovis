@@ -1,0 +1,107 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 560" width="100%" height="100%" style="background:#ffffff; font-family:'Plus Jakarta Sans', Arial, sans-serif;">
+<style>
+  .axis-grid { stroke: #f1f5f9; stroke-width: 1; stroke-dasharray: 4,4; }
+  .axis-text { font-size: 11px; fill: #64748b; font-family: inherit; }
+  .bar-total { font-size: 13px; font-weight: 800; fill: #0f172a; text-anchor: middle; }
+  .col-title { font-size: 14px; font-weight: 800; fill: #0f172a; text-anchor: middle; }
+  .col-sub { font-size: 10px; fill: #64748b; text-anchor: middle; }
+  .seg-text { font-size: 11px; font-weight: 700; fill: #ffffff; text-anchor: middle; }
+  .title-text { font-size: 18px; font-weight: 800; fill: #0f172a; }
+  .subtitle-text { font-size: 12px; fill: #64748b; }
+  .legend-text { font-size: 11px; font-weight: 700; fill: #334155; }
+  rect.seg { transition: opacity 0.2s ease; cursor: pointer; }
+  rect.seg:hover { opacity: 0.9; }
+</style>
+
+
+<text x="80" y="32" class="title-text">¿Cómo cambió la intensidad del esfuerzo mes a mes?</text>
+<text x="80" y="52" class="subtitle-text">Kilómetros mensuales por zona cardíaca: en junio el 100% fue en Zona 4 (rojo); en septiembre el 92% fue en Zona 2 (verde).</text>
+
+<line x1="80" y1="495.0" x2="950" y2="495.0" class="axis-grid" />
+<text x="68" y="499.0" text-anchor="end" class="axis-text">0 km</text>
+<line x1="80" y1="416.15384615384613" x2="950" y2="416.15384615384613" class="axis-grid" />
+<text x="68" y="420.15384615384613" text-anchor="end" class="axis-text">50 km</text>
+<line x1="80" y1="337.30769230769226" x2="950" y2="337.30769230769226" class="axis-grid" />
+<text x="68" y="341.30769230769226" text-anchor="end" class="axis-text">100 km</text>
+<line x1="80" y1="258.46153846153845" x2="950" y2="258.46153846153845" class="axis-grid" />
+<text x="68" y="262.46153846153845" text-anchor="end" class="axis-text">150 km</text>
+<line x1="80" y1="179.61538461538458" x2="950" y2="179.61538461538458" class="axis-grid" />
+<text x="68" y="183.61538461538458" text-anchor="end" class="axis-text">200 km</text>
+<line x1="80" y1="100.76923076923077" x2="950" y2="100.76923076923077" class="axis-grid" />
+<text x="68" y="104.76923076923077" text-anchor="end" class="axis-text">250 km</text>
+<rect class="seg" x="104.36" y="481.1230769230769" width="125.28" height="13.87692307692308" fill="#f59e0b" rx="2">
+<title>Mayo • Zona 3: 8.8 km (24%)</title></rect>
+<rect class="seg" x="104.36" y="437.9153846153846" width="125.28" height="43.207692307692305" fill="#ef4444" rx="4">
+<title>Mayo • Zona 4: 27.4 km (76%)</title></rect>
+<text x="167.0" y="463.5192307692308" class="seg-text">27 km (76%)</text>
+<text x="167.0" y="429.9153846153846" class="bar-total">36.2 km</text>
+<text x="167.0" y="515" class="col-title">Mayo</text>
+<text x="167.0" y="530" class="col-sub">Arranque (5 salidas)</text>
+<rect class="seg" x="278.36" y="442.48846153846154" width="125.28" height="52.51153846153846" fill="#ef4444" rx="4">
+<title>Junio • Zona 4: 33.3 km (100%)</title></rect>
+<text x="341.0" y="472.74423076923074" class="seg-text">33 km (100%)</text>
+<text x="341.0" y="434.48846153846154" class="bar-total">33.3 km</text>
+<text x="341.0" y="515" class="col-title">Junio</text>
+<text x="341.0" y="530" class="col-sub">Adaptación (4 salidas)</text>
+<rect class="seg" x="452.36" y="472.9230769230769" width="125.28" height="22.076923076923077" fill="#10b981" rx="4">
+<title>Julio • Zona 2: 14.0 km (13%)</title></rect>
+<text x="515.0" y="487.96153846153845" class="seg-text">14 km (13%)</text>
+<rect class="seg" x="452.36" y="415.04999999999995" width="125.28" height="57.87307692307692" fill="#f59e0b" rx="2">
+<title>Julio • Zona 3: 36.7 km (35%)</title></rect>
+<text x="515.0" y="447.98653846153843" class="seg-text">37 km (35%)</text>
+<rect class="seg" x="452.36" y="328.94999999999993" width="125.28" height="86.1" fill="#ef4444" rx="4">
+<title>Julio • Zona 4: 54.6 km (52%)</title></rect>
+<text x="515.0" y="375.99999999999994" class="seg-text">55 km (52%)</text>
+<text x="515.0" y="320.94999999999993" class="bar-total">105.2 km</text>
+<text x="515.0" y="515" class="col-title">Julio</text>
+<text x="515.0" y="530" class="col-sub">Aumento de carga (10 salidas)</text>
+<rect class="seg" x="626.36" y="310.0269230769231" width="125.28" height="184.97307692307692" fill="#10b981" rx="4">
+<title>Agosto • Zona 2: 117.3 km (50%)</title></rect>
+<text x="689.0" y="406.51346153846157" class="seg-text">117 km (50%)</text>
+<rect class="seg" x="626.36" y="133.56923076923076" width="125.28" height="176.45769230769233" fill="#f59e0b" rx="2">
+<title>Agosto • Zona 3: 111.9 km (47%)</title></rect>
+<text x="689.0" y="225.7980769230769" class="seg-text">112 km (47%)</text>
+<rect class="seg" x="626.36" y="123.47692307692307" width="125.28" height="10.092307692307692" fill="#ef4444" rx="4">
+<title>Agosto • Zona 4: 6.4 km (3%)</title></rect>
+<text x="689.0" y="115.47692307692307" class="bar-total">235.6 km</text>
+<text x="689.0" y="515" class="col-title">Agosto</text>
+<text x="689.0" y="530" class="col-sub">Mes récord (19 salidas)</text>
+<rect class="seg" x="800.36" y="386.6653846153846" width="125.28" height="108.3346153846154" fill="#10b981" rx="4">
+<title>Septiembre • Zona 2: 68.7 km (91%)</title></rect>
+<text x="863.0" y="444.8326923076923" class="seg-text">69 km (91%)</text>
+<rect class="seg" x="800.36" y="376.5730769230769" width="125.28" height="10.092307692307692" fill="#f59e0b" rx="2">
+<title>Septiembre • Zona 3: 6.4 km (9%)</title></rect>
+<text x="863.0" y="368.5730769230769" class="bar-total">75.1 km</text>
+<text x="863.0" y="515" class="col-title">Septiembre</text>
+<text x="863.0" y="530" class="col-sub">Tapering y Maratón 42K</text>
+
+<g transform="translate(276.0, 392.48846153846154)">
+  <rect width="130" height="26" rx="5" fill="#fef2f2" stroke="#ef4444" stroke-width="1.5" />
+  <text x="65" y="17" text-anchor="middle" font-size="9.5" font-weight="800" fill="#b91c1c">100% en Zona 4 (Umbral)</text>
+</g>
+
+
+<g transform="translate(614.0, 73.47692307692313)">
+  <rect width="150" height="26" rx="5" fill="#ecfdf5" stroke="#10b981" stroke-width="1.5" />
+  <text x="75" y="17" text-anchor="middle" font-size="9.5" font-weight="800" fill="#047857">Mes pico: 97% en Zona 2/3</text>
+</g>
+
+
+<g transform="translate(788.0, 326.57307692307694)">
+  <rect width="150" height="26" rx="5" fill="#ecfdf5" stroke="#10b981" stroke-width="1.5" />
+  <text x="75" y="17" text-anchor="middle" font-size="9.5" font-weight="800" fill="#065f46">🏆 Maratón: 92% en Zona 2</text>
+</g>
+
+
+<g transform="translate(490, 30)">
+  <rect x="0" y="0" width="12" height="12" rx="2" fill="#ef4444" />
+  <text x="18" y="10" class="legend-text">Zona 4 (≥145 bpm)</text>
+  
+  <rect x="150" y="0" width="12" height="12" rx="2" fill="#f59e0b" />
+  <text x="168" y="10" class="legend-text">Zona 3 (130-144 bpm)</text>
+  
+  <rect x="300" y="0" width="12" height="12" rx="2" fill="#10b981" />
+  <text x="318" y="10" class="legend-text">Zona 2 (&lt;130 bpm)</text>
+</g>
+
+</svg>

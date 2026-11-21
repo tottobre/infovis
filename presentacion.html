@@ -1,0 +1,1497 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>De Gymrat a correr una maratón | Tomas Ottobre — ITBA</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+  
+  <style>
+    :root {
+      --bg: #090d16;
+      --bg-surface: #0f1626;
+      --bg-card: #131c2e;
+      --bg-card-hover: #18233a;
+      --border: #1e293b;
+      --border-focus: #3b82f6;
+      --text: #f8fafc;
+      --text-muted: #94a3b8;
+      --accent: #3b82f6;
+      --accent-glow: rgba(59, 130, 246, 0.35);
+      --success: #10b981;
+      --warning: #f59e0b;
+      --danger: #ef4444;
+      --nav-height: 54px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html, body {
+      height: 100%;
+      background-color: var(--bg);
+      color: var(--text);
+      font-family: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      overflow-x: hidden;
+      scroll-behavior: smooth;
+    }
+
+    /* Scroll snapping on desktop for clean presentation slide feel */
+    @media (min-width: 900px) {
+      body {
+        scroll-snap-type: y mandatory;
+        overflow-y: scroll;
+      }
+      .slide {
+        scroll-snap-align: start;
+        scroll-snap-stop: always;
+        height: 100vh;
+        height: 100dvh;
+        max-height: 100vh;
+        overflow: hidden;
+      }
+    }
+
+    /* Top Progress Bar */
+    #progress-bar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      height: 3px;
+      width: 0%;
+      background: linear-gradient(90deg, #3b82f6, #06b6d4, #10b981);
+      z-index: 1000;
+      transition: width 0.15s ease-out;
+    }
+
+    /* Sticky Slim Navbar */
+    .navbar {
+      position: fixed;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: var(--nav-height);
+      z-index: 100;
+      backdrop-filter: blur(14px);
+      -webkit-backdrop-filter: blur(14px);
+      background: rgba(9, 13, 22, 0.88);
+      border-bottom: 1px solid var(--border);
+      padding: 0 20px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .nav-brand {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      text-decoration: none;
+      color: var(--text);
+      font-size: 0.88rem;
+      font-weight: 700;
+      white-space: nowrap;
+    }
+
+    .badge-itba {
+      background: linear-gradient(135deg, #1d4ed8, #2563eb);
+      color: #fff;
+      font-size: 0.68rem;
+      font-weight: 800;
+      letter-spacing: 0.06em;
+      padding: 3px 8px;
+      border-radius: 6px;
+      text-transform: uppercase;
+    }
+
+    .nav-pills {
+      display: flex;
+      gap: 6px;
+      overflow-x: auto;
+      scrollbar-width: none;
+    }
+    .nav-pills::-webkit-scrollbar { display: none; }
+
+    .nav-pill {
+      font-size: 0.75rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      text-decoration: none;
+      padding: 5px 12px;
+      border-radius: 999px;
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid var(--border);
+      transition: all 0.2s ease;
+      white-space: nowrap;
+    }
+
+    .nav-pill:hover, .nav-pill.active {
+      color: #fff;
+      background: var(--accent);
+      border-color: var(--accent);
+      box-shadow: 0 0 10px var(--accent-glow);
+    }
+
+    .nav-section-label {
+      font-size: 0.65rem;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #64748b;
+      font-weight: 700;
+      padding: 0 4px;
+      display: flex;
+      align-items: center;
+      user-select: none;
+    }
+
+    .nav-actions {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    .nav-btn-icon {
+      background: rgba(255, 255, 255, 0.05);
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+      padding: 6px 12px;
+      border-radius: 8px;
+      font-size: 0.75rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      transition: all 0.2s;
+    }
+    .nav-btn-icon:hover {
+      color: #fff;
+      border-color: var(--accent);
+      background: rgba(59, 130, 246, 0.1);
+    }
+
+    /* Common Slide Layout */
+    .slide {
+      box-sizing: border-box;
+      padding-top: var(--nav-height);
+      display: flex;
+      flex-direction: column;
+      position: relative;
+    }
+
+    /* SLIDE 0: HERO PORTADA */
+    .hero-slide {
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: calc(var(--nav-height) + 20px) 24px 30px 24px;
+      background: radial-gradient(circle at 50% 30%, #1e3a8a 0%, var(--bg) 65%);
+    }
+
+    .hero-container {
+      max-width: 920px;
+      width: 100%;
+      margin: 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: #60a5fa;
+      background: rgba(59, 130, 246, 0.12);
+      border: 1px solid rgba(59, 130, 246, 0.3);
+      padding: 5px 12px;
+      border-radius: 999px;
+      margin-bottom: 16px;
+    }
+
+    .hero-title {
+      font-size: clamp(2.1rem, 4.8vw, 3.4rem);
+      font-weight: 800;
+      line-height: 1.12;
+      margin-bottom: 14px;
+      background: linear-gradient(135deg, #ffffff 40%, #94a3b8 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      letter-spacing: -0.02em;
+    }
+
+    .hero-subtitle {
+      max-width: 700px;
+      font-size: clamp(0.95rem, 1.8vw, 1.12rem);
+      color: var(--text-muted);
+      line-height: 1.5;
+      margin-bottom: 24px;
+    }
+
+    .stats-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 12px;
+      width: 100%;
+      margin-bottom: 28px;
+    }
+
+    .stat-card {
+      background: rgba(19, 28, 46, 0.7);
+      backdrop-filter: blur(10px);
+      border: 1px solid var(--border);
+      padding: 14px;
+      border-radius: 12px;
+      text-align: left;
+      transition: transform 0.2s ease, border-color 0.2s ease;
+    }
+    .stat-card:hover {
+      transform: translateY(-2px);
+      border-color: var(--accent);
+    }
+    .stat-number {
+      font-size: clamp(1.4rem, 2.5vw, 1.8rem);
+      font-weight: 800;
+      color: #fff;
+      font-family: 'JetBrains Mono', monospace;
+    }
+    .stat-label {
+      font-size: 0.72rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      margin-top: 3px;
+    }
+
+    .hero-cta-group {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+    }
+
+    .btn-start {
+      background: linear-gradient(135deg, #2563eb, #1d4ed8);
+      color: #fff;
+      font-size: 0.95rem;
+      font-weight: 700;
+      padding: 12px 28px;
+      border-radius: 999px;
+      text-decoration: none;
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      box-shadow: 0 4px 18px rgba(37, 99, 235, 0.4);
+      transition: all 0.2s ease;
+    }
+    .btn-start:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 6px 24px rgba(37, 99, 235, 0.6);
+    }
+
+    /* CHART SLIDES (FULL-WIDTH IMMERSIVE PRESENTATION LAYOUT) */
+    .slide-body {
+      flex: 1;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      max-width: 1360px;
+      width: 100%;
+      margin: 0 auto;
+      padding: 10px 24px 24px 24px;
+      min-height: 0;
+      height: calc(100vh - var(--nav-height));
+    }
+
+    /* Hide redundant outside notices and side panels */
+    .info-panel,
+    .chart-banner-notice,
+    .btn-toggle-focus {
+      display: none !important;
+    }
+
+    /* Chart Area Frame */
+    .chart-panel {
+      background: var(--bg-surface);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 12px;
+      display: flex;
+      flex-direction: column;
+      align-items: stretch;
+      justify-content: flex-start;
+      overflow: hidden;
+      position: relative;
+      min-height: 0;
+      width: 100%;
+      height: 100%;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.4);
+      transition: all 0.3s ease;
+    }
+
+    /* Floating presentation navigation dock */
+    .presentation-floating-nav {
+      position: fixed;
+      bottom: 20px;
+      right: 32px;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      background: rgba(15, 23, 42, 0.88);
+      backdrop-filter: blur(14px);
+      border: 1px solid rgba(255, 255, 255, 0.16);
+      border-radius: 9999px;
+      padding: 6px 14px;
+      box-shadow: 0 8px 24px rgba(0, 0, 0, 0.45);
+      z-index: 100;
+    }
+    .floating-nav-btn {
+      background: transparent;
+      border: none;
+      color: #e2e8f0;
+      font-size: 0.8rem;
+      font-weight: 600;
+      cursor: pointer;
+      padding: 4px 10px;
+      border-radius: 9999px;
+      transition: all 0.2s ease;
+    }
+    .floating-nav-btn:hover {
+      background: rgba(255, 255, 255, 0.15);
+      color: #38bdf8;
+    }
+    .floating-slide-num {
+      font-size: 0.78rem;
+      font-weight: 700;
+      color: #38bdf8;
+      letter-spacing: 0.05em;
+      padding: 0 4px;
+      border-left: 1px solid rgba(255, 255, 255, 0.15);
+      border-right: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    .chart-panel.white-canvas {
+      background: #ffffff !important;
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      box-shadow: 0 10px 32px rgba(0, 0, 0, 0.5);
+      padding: 12px 14px 10px 14px;
+    }
+
+    .chart-banner-notice {
+      background: #f8fafc;
+      color: #1e293b;
+      border-left: 4px solid #2563eb;
+      padding: 6px 12px;
+      border-radius: 6px;
+      font-size: 0.74rem;
+      line-height: 1.4;
+      margin-bottom: 8px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      flex-shrink: 0;
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+    }
+    .chart-banner-notice strong {
+      color: #1d4ed8;
+      font-weight: 700;
+    }
+
+    .chart-panel.white-canvas .btn-toggle-focus {
+      background: #0f172a;
+      color: #f8fafc;
+      border: 1px solid #334155;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.25);
+    }
+    .chart-panel.white-canvas .btn-toggle-focus:hover {
+      background: #2563eb;
+      border-color: #3b82f6;
+      color: #ffffff;
+    }
+
+    .chart-panel iframe,
+    .chart-panel .flourish-embed,
+    .chart-panel object,
+    .chart-panel svg {
+      width: 100% !important;
+      flex: 1 1 auto;
+      height: 100% !important;
+      max-height: 100% !important;
+      min-height: 0 !important;
+      border: none;
+      display: block;
+      border-radius: 8px;
+    }
+
+    .chart-panel object,
+    .chart-panel svg {
+      object-fit: contain;
+      width: 100% !important;
+      height: 100% !important;
+    }
+
+    .chart-panel .parallel-charts-wrap iframe {
+      height: 100% !important;
+      min-height: 240px !important;
+      flex: 1 1 auto;
+    }
+
+    /* Floating Expand/Restore Button on Chart */
+    .btn-toggle-focus {
+      position: absolute;
+      top: 14px;
+      right: 14px;
+      z-index: 10;
+      background: rgba(15, 23, 42, 0.85);
+      backdrop-filter: blur(8px);
+      border: 1px solid var(--border);
+      color: var(--text-muted);
+      padding: 5px 10px;
+      border-radius: 8px;
+      font-size: 0.72rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+      transition: all 0.2s;
+    }
+    .btn-toggle-focus:hover {
+      color: #fff;
+      border-color: var(--accent);
+      background: var(--accent);
+    }
+
+    /* Sidebar info Area */
+    .info-panel {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 16px;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      overflow-y: auto;
+      min-height: 0;
+      height: 100%;
+      transition: opacity 0.3s ease, padding 0.3s ease;
+    }
+
+    .info-header {
+      margin-bottom: 12px;
+    }
+
+    .slide-badge-row {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+      margin-bottom: 8px;
+    }
+
+    .slide-num {
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: #60a5fa;
+      background: rgba(59, 130, 246, 0.15);
+      padding: 2px 7px;
+      border-radius: 5px;
+    }
+
+    .slide-tool {
+      font-size: 0.72rem;
+      font-weight: 600;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .slide-heading {
+      font-size: 1.25rem;
+      font-weight: 700;
+      color: #ffffff;
+      line-height: 1.25;
+      margin-bottom: 6px;
+    }
+
+    .slide-sub {
+      font-size: 0.82rem;
+      color: var(--text-muted);
+      line-height: 1.4;
+    }
+
+    /* Technical Insight Box */
+    .insight-box {
+      background: rgba(15, 23, 42, 0.85);
+      border-left: 3px solid var(--accent);
+      border-radius: 0 8px 8px 0;
+      padding: 12px 14px;
+      margin: 12px 0;
+    }
+
+    .insight-badge {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+      color: #60a5fa;
+      margin-bottom: 6px;
+    }
+
+    .insight-p {
+      font-size: 0.82rem;
+      color: #cbd5e1;
+      line-height: 1.5;
+    }
+
+    /* Variables Table */
+    .variables-list {
+      background: rgba(0, 0, 0, 0.25);
+      border: 1px solid rgba(255, 255, 255, 0.05);
+      border-radius: 8px;
+      padding: 10px 12px;
+      display: flex;
+      flex-direction: column;
+      gap: 6px;
+    }
+
+    .var-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      font-size: 0.75rem;
+      gap: 8px;
+    }
+
+    .var-key {
+      color: var(--text-muted);
+      white-space: nowrap;
+    }
+
+    .var-val {
+      color: #f1f5f9;
+      font-weight: 600;
+      text-align: right;
+    }
+
+    /* Slide Controls at bottom */
+    .slide-nav-controls {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-top: 14px;
+      padding-top: 12px;
+      border-top: 1px solid var(--border);
+    }
+
+    .nav-btn {
+      background: rgba(255, 255, 255, 0.06);
+      border: 1px solid var(--border);
+      color: var(--text);
+      padding: 6px 14px;
+      border-radius: 8px;
+      font-size: 0.78rem;
+      font-weight: 600;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      gap: 5px;
+      transition: all 0.2s;
+    }
+    .nav-btn:hover {
+      background: var(--accent);
+      border-color: var(--accent);
+    }
+
+    .slide-page-indicator {
+      font-size: 0.75rem;
+      font-family: 'JetBrains Mono', monospace;
+      color: var(--text-muted);
+    }
+
+    /* SLIDE 06: CONCLUSIONES & BALANCE */
+    .conclusions-slide {
+      padding: 10px 24px 16px 24px;
+      max-width: 1400px;
+      width: 100%;
+      margin: 0 auto;
+      height: calc(100vh - var(--nav-height));
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      min-height: 0;
+    }
+
+    .conclusions-header {
+      text-align: left;
+      margin-bottom: 14px;
+    }
+
+    .conclusions-grid {
+      display: grid;
+      grid-template-columns: 1.1fr 1.05fr 0.85fr;
+      gap: 16px;
+      flex: 1;
+      min-height: 0;
+    }
+
+    /* Comparison Table Card */
+    .table-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      overflow-y: auto;
+    }
+
+    .card-heading-row {
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 12px;
+    }
+
+    .comp-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.8rem;
+    }
+
+    .comp-table th {
+      text-align: left;
+      padding: 8px 10px;
+      background: rgba(255, 255, 255, 0.04);
+      color: var(--text-muted);
+      font-weight: 600;
+      border-bottom: 1px solid var(--border);
+      font-size: 0.75rem;
+      text-transform: uppercase;
+    }
+
+    .comp-table td {
+      padding: 9px 10px;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      color: #e2e8f0;
+    }
+
+    .comp-table tr:hover td {
+      background: rgba(255, 255, 255, 0.02);
+    }
+
+    .delta-neg {
+      color: var(--danger);
+      font-weight: 700;
+      font-family: 'JetBrains Mono', monospace;
+    }
+    .delta-pos {
+      color: var(--success);
+      font-weight: 700;
+      font-family: 'JetBrains Mono', monospace;
+    }
+
+    /* Key Takeaways Card */
+    .takeaways-card {
+      background: var(--bg-card);
+      border: 1px solid var(--border);
+      border-radius: 14px;
+      padding: 16px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      overflow-y: auto;
+    }
+
+    .takeaway-item {
+      background: rgba(15, 23, 42, 0.6);
+      border-left: 3px solid var(--accent);
+      border-radius: 0 8px 8px 0;
+      padding: 12px 14px;
+    }
+    .takeaway-item:nth-child(2) { border-left-color: var(--warning); }
+    .takeaway-item:nth-child(3) { border-left-color: var(--success); }
+
+    .takeaway-title {
+      font-size: 0.85rem;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 4px;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+
+    .takeaway-desc {
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      line-height: 1.5;
+    }
+
+    /* Finisher Closure Card (Slide 7) */
+    .photo-closure-card {
+      background: var(--bg-card);
+      border: 1px solid rgba(59, 130, 246, 0.35);
+      border-radius: 14px;
+      overflow: hidden;
+      display: flex;
+      flex-direction: column;
+      box-shadow: 0 10px 30px rgba(0, 0, 0, 0.45);
+      position: relative;
+    }
+
+    .photo-closure-badge {
+      position: absolute;
+      top: 10px;
+      left: 10px;
+      z-index: 10;
+      background: linear-gradient(135deg, #f59e0b, #d97706);
+      color: #0f172a;
+      font-size: 0.7rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.04em;
+      padding: 4px 9px;
+      border-radius: 999px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.4);
+    }
+
+    .photo-closure-img-box {
+      position: relative;
+      width: 100%;
+      height: 420px;
+      flex: 1 1 auto;
+      min-height: 380px;
+      overflow: hidden;
+    }
+
+    .photo-closure-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center 36%;
+      display: block;
+      transition: transform 0.3s ease;
+    }
+    .photo-closure-card:hover .photo-closure-img {
+      transform: scale(1.02);
+    }
+
+    .photo-closure-caption-row {
+      display: flex;
+      justify-content: space-between;
+      align-items: baseline;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+      padding-bottom: 6px;
+    }
+
+    .photo-closure-name {
+      font-size: 0.98rem;
+      font-weight: 800;
+      color: #fff;
+      line-height: 1.2;
+    }
+
+    .photo-closure-sub {
+      font-size: 0.72rem;
+      color: #94a3b8;
+    }
+
+    .photo-closure-body {
+      padding: 10px 14px 12px 14px;
+      display: flex;
+      flex-direction: column;
+      gap: 8px;
+      flex-shrink: 0;
+      background: var(--bg-card);
+    }
+
+    .photo-closure-metric-row {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 6px;
+      background: rgba(0, 0, 0, 0.3);
+      padding: 6px 4px;
+      border-radius: 8px;
+      border: 1px solid rgba(255, 255, 255, 0.06);
+    }
+
+    .pcm-item {
+      display: flex;
+      flex-direction: column;
+      text-align: center;
+    }
+
+    .pcm-label {
+      font-size: 0.62rem;
+      color: var(--text-muted);
+      text-transform: uppercase;
+      letter-spacing: 0.03em;
+    }
+
+    .pcm-val {
+      font-size: 0.76rem;
+      font-weight: 700;
+      color: #f1f5f9;
+      font-family: 'JetBrains Mono', monospace;
+      margin-top: 2px;
+    }
+
+    .photo-closure-verdict {
+      background: rgba(37, 99, 235, 0.12);
+      border-left: 3px solid #3b82f6;
+      border-radius: 0 8px 8px 0;
+      padding: 6px 10px;
+      font-size: 0.72rem;
+      color: #cbd5e1;
+      line-height: 1.4;
+    }
+    .photo-closure-verdict strong {
+      color: #60a5fa;
+    }
+
+    .conclusions-footer {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding-top: 12px;
+      border-top: 1px solid var(--border);
+      margin-top: 10px;
+    }
+
+    /* Modal Data Lineage */
+    .modal-overlay {
+      display: none;
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100vw;
+      height: 100vh;
+      background: rgba(0, 0, 0, 0.75);
+      backdrop-filter: blur(8px);
+      z-index: 2000;
+      align-items: center;
+      justify-content: center;
+      padding: 20px;
+    }
+    .modal-overlay.active {
+      display: flex;
+    }
+
+    .modal-card {
+      background: #0f172a;
+      border: 1px solid var(--border);
+      border-radius: 18px;
+      max-width: 640px;
+      width: 100%;
+      padding: 24px;
+      box-shadow: 0 20px 50px rgba(0, 0, 0, 0.7);
+      position: relative;
+    }
+
+    .modal-header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 16px;
+      padding-bottom: 12px;
+      border-bottom: 1px solid var(--border);
+    }
+    .modal-title {
+      font-size: 1.15rem;
+      font-weight: 700;
+      color: #fff;
+    }
+    .modal-close {
+      background: none;
+      border: none;
+      color: var(--text-muted);
+      font-size: 1.4rem;
+      cursor: pointer;
+      line-height: 1;
+    }
+    .modal-close:hover { color: #fff; }
+
+    .source-list {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      font-size: 0.85rem;
+      color: #cbd5e1;
+    }
+
+    .source-item {
+      background: rgba(255, 255, 255, 0.03);
+      border: 1px solid rgba(255, 255, 255, 0.06);
+      padding: 12px 14px;
+      border-radius: 10px;
+    }
+    .source-item strong {
+      color: #60a5fa;
+      display: block;
+      margin-bottom: 3px;
+    }
+
+    /* Floating navigation helper */
+    .keyboard-hint {
+      position: fixed;
+      bottom: 18px;
+      right: 20px;
+      background: rgba(17, 24, 39, 0.9);
+      backdrop-filter: blur(10px);
+      border: 1px solid var(--border);
+      padding: 6px 12px;
+      border-radius: 999px;
+      font-size: 0.72rem;
+      color: var(--text-muted);
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      z-index: 99;
+    }
+
+    .kbd {
+      background: #1f2937;
+      color: #fff;
+      padding: 2px 5px;
+      border-radius: 4px;
+      border: 1px solid #374151;
+      font-family: 'JetBrains Mono', monospace;
+      font-size: 0.68rem;
+    }
+
+    /* RESPONSIVE DESIGN (TABLETS & PHONES) */
+    @media (max-width: 1023px) {
+      body {
+        scroll-snap-type: none;
+      }
+      .slide {
+        height: auto;
+        min-height: 100dvh;
+        max-height: none;
+        overflow: visible;
+        padding-bottom: 40px;
+      }
+      .slide-body {
+        grid-template-columns: 1fr;
+        height: auto;
+        padding: 12px 16px;
+        gap: 14px;
+      }
+      .slide-body.focused {
+        grid-template-columns: 1fr;
+      }
+      .btn-toggle-focus {
+        display: none;
+      }
+      .chart-panel {
+        height: 52vh;
+        min-height: 380px;
+        padding: 8px;
+      }
+      .info-panel {
+        height: auto;
+        padding: 16px;
+        opacity: 1 !important;
+        pointer-events: auto !important;
+      }
+      .stats-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .conclusions-slide {
+        height: auto;
+        min-height: 100dvh;
+      }
+      .conclusions-grid {
+        grid-template-columns: 1fr;
+      }
+      .keyboard-hint {
+        display: none;
+      }
+    }
+
+    @media (max-width: 640px) {
+      .navbar {
+        padding: 0 12px;
+      }
+      .badge-itba {
+        display: none;
+      }
+      .nav-pills {
+        gap: 4px;
+      }
+      .nav-pill {
+        font-size: 0.7rem;
+        padding: 4px 8px;
+      }
+      .hero-title {
+        font-size: 1.85rem;
+      }
+      .chart-panel {
+        min-height: 340px;
+        height: 48vh;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Progress Bar -->
+  <div id="progress-bar"></div>
+
+  <!-- Sticky Slim Navbar -->
+  <nav class="navbar">
+    <a href="#slide-0" class="nav-brand">
+      <span class="badge-itba">ITBA</span>
+      <span>Tomas Ottobre</span>
+    </a>
+    <div class="nav-pills">
+      <span class="nav-section-label">Parte 1</span>
+      <a href="#slide-1" class="nav-pill" data-slide="1">01. Rutina y Horarios</a>
+      <span class="nav-section-label">Parte 2</span>
+      <a href="#slide-2" class="nav-pill" data-slide="2">02. Carrera 42K</a>
+      <a href="#slide-3" class="nav-pill" data-slide="3">03. Disciplinas vs Masa Muscular</a>
+      <a href="#slide-4" class="nav-pill" data-slide="4">04. Composición Corporal</a>
+      <a href="#slide-5" class="nav-pill" data-slide="5">05. Adaptación Cardíaca</a>
+      <span class="nav-section-label">Cierre</span>
+      <a href="#slide-6" class="nav-pill" data-slide="6">06. Balance y Meta</a>
+    </div>
+    <div class="nav-actions">
+      <button class="nav-btn-icon" id="open-data-modal" title="Metodología y Datasets">
+        <span>Datos</span>
+      </button>
+      <button class="nav-btn-icon" id="fullscreen-toggle" title="Pantalla completa">
+        <span>⛶</span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- SLIDE 0: HERO PORTADA -->
+  <section id="slide-0" class="slide hero-slide">
+    <div class="hero-container">
+      <div class="hero-badge">
+        <span>Visualización de la Información — ITBA</span>
+      </div>
+      <h1 class="hero-title">De Gymrat a correr una maratón: cuerpo y hábitos</h1>
+      <p class="hero-subtitle">
+        Qué le pasó a mis horarios, a mi masa muscular y a la respuesta de mi corazón al cambiar el gimnasio por el entrenamiento de fondo.
+      </p>
+
+      <div class="stats-grid">
+        <div class="stat-card">
+          <div class="stat-number">491 km</div>
+          <div class="stat-label">Corridos en la preparación</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">537</div>
+          <div class="stat-label">Entrenamientos registrados</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">42.2 km</div>
+          <div class="stat-label">Maratón de Bs. As. (42.195 km)</div>
+        </div>
+        <div class="stat-card">
+          <div class="stat-number">-3.2 kg</div>
+          <div class="stat-label">Masa muscular resignada</div>
+        </div>
+      </div>
+
+      <div class="hero-cta-group">
+        <a href="#slide-1" class="btn-start">
+          <span>Comenzar historia</span>
+          <span>↓</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- PARTE 1: LA VIDA ANTES DEL MARATÓN -->
+  <!-- SLIDE 1: HÁBITOS Y HORARIOS (DATAWRAPPER MATRIX HEATMAP) -->
+  <section id="slide-1" class="slide">
+    <div class="slide-body" id="body-slide-1">
+      <div class="chart-panel white-canvas">
+        <iframe title="¿A qué hora y qué días entrenaba normalmente?" aria-label="Table" id="datawrapper-chart-MSxks" src="https://datawrapper.dwcdn.net/MSxks/4/" scrolling="no" frameborder="0" style="width: 100%; height: 100%; border: none;" data-external="1"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- PARTE 2: LA PREPARACIÓN PARA LA MARATÓN -->
+  <!-- SLIDE 2: EL CAMINO A LOS 42K (FLOURISH BAR CHART RACE) -->
+  <section id="slide-2" class="slide">
+    <div class="slide-body" id="body-slide-2">
+      <div class="chart-panel white-canvas">
+        <iframe src="https://flo.uri.sh/visualisation/30990085/embed" title="¿Cómo el running fue ganándole terreno a todo lo demás?" frameborder="0" scrolling="no" style="width: 100%; height: 100%; border: none; border-radius: 8px;"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDE 3: FRECUENCIA VS MASA MUSCULAR (TABLEAU PUBLIC) -->
+  <section id="slide-3" class="slide">
+    <div class="slide-body" id="body-slide-3">
+      <div class="chart-panel white-canvas">
+        <iframe src="https://public.tableau.com/views/TP1_17952333302010/Dashboard1?:showVizHome=no&:embed=true" title="¿Cómo varió la masa muscular según el tipo y volumen de entrenamiento?" frameborder="0" style="width: 100%; height: 100%; border: none; border-radius: 8px;"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDE 4: COMPOSICIÓN CORPORAL (DATAWRAPPER SMALL MULTIPLES) -->
+  <section id="slide-4" class="slide">
+    <div class="slide-body" id="body-slide-4">
+      <div class="chart-panel white-canvas">
+        <iframe title="¿Cómo impactó la preparación en mi masa muscular y grasa corporal?" aria-label="Small multiple line chart" id="datawrapper-chart-QijmD" src="https://datawrapper.dwcdn.net/QijmD/1/" scrolling="no" frameborder="0" style="width: 100%; height: 100%; border: none;" data-external="1"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDE 5: TRANSICIÓN CARDÍACA POR ZONAS (RAWGRAPHS OBJECT INTERACTIVO) -->
+  <section id="slide-5" class="slide">
+    <div class="slide-body" id="body-slide-5">
+      <div class="chart-panel white-canvas">
+        <object type="image/svg+xml" data="rawgraphs_zonas_final.svg" style="width: 100%; height: 100%; border: none; display: block;"></object>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDE 6: CONCLUSIONES Y BALANCE FINAL -->
+  <section id="slide-6" class="slide">
+    <div class="conclusions-slide">
+      <div class="conclusions-header">
+        <div class="slide-badge-row" style="max-width: 250px;">
+          <span class="slide-num">06 / 06</span>
+          <span class="slide-tool">Balance final</span>
+        </div>
+        <h2 style="font-size: 1.5rem; color: #fff;">El balance: ¿Valió la pena el esfuerzo?</h2>
+        <p style="font-size: 0.85rem; color: var(--text-muted);">Comparación directa entre mi punto más alto en el gimnasio y el día que corrí la maratón.</p>
+      </div>
+
+      <div class="conclusions-grid">
+        <!-- Tabla comparativa -->
+        <div class="table-card">
+          <div class="card-heading-row">
+            <span>Antes y después</span>
+          </div>
+          <table class="comp-table">
+            <thead>
+              <tr>
+                <th>Qué miramos</th>
+                <th>En el gimnasio (Mayo)</th>
+                <th>Para la maratón (Septiembre)</th>
+                <th>El cambio</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Masa muscular</strong></td>
+                <td>71.5 kg</td>
+                <td>68.9 kg</td>
+                <td class="delta-neg">-2.6 kg (-3.2 kg en total)</td>
+              </tr>
+              <tr>
+                <td><strong>Masa grasa</strong></td>
+                <td>11.2 kg</td>
+                <td>13.2 kg</td>
+                <td class="delta-pos">+2.0 kg (+17.8%)</td>
+              </tr>
+              <tr>
+                <td><strong>Deporte principal</strong></td>
+                <td>18 días al mes de pesas</td>
+                <td>21 salidas al mes de running</td>
+                <td>El running reemplazó al gimnasio</td>
+              </tr>
+              <tr>
+                <td><strong>Gasto en una sesión</strong></td>
+                <td>~650 kcal (Fuerza)</td>
+                <td>3.279 kcal (Maratón)</td>
+                <td class="delta-pos">5 veces más energía en 1 día</td>
+              </tr>
+              <tr>
+                <td><strong>Horario habitual</strong></td>
+                <td>19 a 21 hs (días de semana)</td>
+                <td>7:30 a 11:30 hs (fines de semana)</td>
+                <td>Fondos largos de sabados a la mañana</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <!-- Conclusiones clave humanas -->
+        <div class="takeaways-card">
+          <div class="card-heading-row">
+            <span>Lo que me dejó este proceso</span>
+          </div>
+
+          <div class="takeaway-item">
+            <div class="takeaway-title">
+              <span>1. El cuerpo necesitó perder peso</span>
+            </div>
+            <p class="takeaway-desc">
+              Para correr fondo no podía cargar tanta masa muscular encima. Para volverme más liviano y aguantar el impacto, el cuerpo terminó bajando más de 3 kilos de músculo en los 4 meses más duros.
+            </p>
+          </div>
+
+          <div class="takeaway-item">
+            <div class="takeaway-title">
+              <span>2. Dos esfuerzos que no tienen nada que ver</span>
+            </div>
+            <p class="takeaway-desc">
+              En el gimnasio se ejercita mucho, pero se descansa entre series. Correr una maratón implicar modificar la cabeza: se debe exigir a estar horas seguidas con el corazón arriba sin frenar.
+            </p>
+          </div>
+
+          <div class="takeaway-item">
+            <div class="takeaway-title">
+              <span>3. La rutina cambió por completo</span>
+            </div>
+            <p class="takeaway-desc">
+              En la semana mantuve los entrenamientos a la tarde y sume clases de running, pero para los fondos largos de 20 a 30 km tuve que acostumbrarme a salir a las 7 de la mañana los sábados y domingos.
+            </p>
+          </div>
+        </div>
+
+        <!-- Tarjeta de Desenlace: Foto Finisher (SIN TIEMPO TOTAL) -->
+        <div class="photo-closure-card">
+          <div class="photo-closure-badge">Finisher 42.195 km</div>
+          <div class="photo-closure-img-box">
+            <img src="assets/tomas_maraton_42k.jpg" alt="Tomas Ottobre Finisher Maratón 42K" class="photo-closure-img">
+          </div>
+          <div class="photo-closure-body">
+            <div class="photo-closure-caption-row">
+              <div class="photo-closure-name">Tomas Ottobre</div>
+              <div class="photo-closure-sub">Maratón de Buenos Aires • Dorsal #17683</div>
+            </div>
+            <div class="photo-closure-metric-row">
+              <div class="pcm-item">
+                <span class="pcm-label">Distancia</span>
+                <span class="pcm-val">42.2 km</span>
+              </div>
+              <div class="pcm-item">
+                <span class="pcm-label">Gasto</span>
+                <span class="pcm-val">3.279 kcal</span>
+              </div>
+              <div class="pcm-item">
+                <span class="pcm-label">Músculo</span>
+                <span class="pcm-val delta-neg">-3.2 kg</span>
+              </div>
+            </div>
+            <div class="photo-closure-verdict">
+              <p><strong>El balance:</strong> Fue un desgaste físico enorme y hubo que aprender mucho, pero cruzar la meta con la medalla hizo que todo el esfuerzo valiera la pena.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="conclusions-footer">
+        <button class="nav-btn" onclick="goToSlide(5)">← Anterior (Adaptación Cardíaca)</button>
+        <span class="slide-page-indicator">6 / 6</span>
+        <button class="nav-btn" onclick="goToSlide(0)">Volver al inicio</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Modal Linaje de Datos -->
+  <div class="modal-overlay" id="data-modal">
+    <div class="modal-card">
+      <div class="modal-header">
+        <h3 class="modal-title">📊 Linaje y Fuentes de Datos</h3>
+        <button class="modal-close" id="close-data-modal">&times;</button>
+      </div>
+      <div class="source-list">
+        <div class="source-item">
+          <strong>1. Antropometría Fraccionamiento en 5 Masas (ISAK 1)</strong>
+          10 controles presenciales realizados con plicómetro Harpenden (precisión 0.2 mm) y cinta antropométrica metálica Lufkin. Medición de 8 pliegues cutáneos, perímetros y diámetros óseos.
+        </div>
+        <div class="source-item">
+          <strong>2. Telemetría y Biometría Garmin Connect (FIT / CSV)</strong>
+          75 actividades de running registradas con reloj multideporte y sensor óptico/banda cardíaca Garmin. Registro segundo a segundo de FC media, FC máxima, cadencia, ritmo por km, elevación y calorías.
+        </div>
+        <div class="source-item">
+          <strong>3. Registro de Accesos SportClub y WOD CrossFit</strong>
+          Base de datos de 537 accesos por torniquete RFID y reservas de boxes, mapeadas en matriz semanal de 7 días x 16 franjas horarias.
+        </div>
+        <div class="source-item">
+          <strong>4. Herramientas de Visualización Empleadas</strong>
+          Datawrapper (Áreas y Tablas de calor), Flourish Studio (Combo chart y Scatter multivariable), RAWGraphs (Bubble Timeline SVG) y Python / Pandas para la limpieza y calibración de outliers.
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Floating Keyboard Hint Badge -->
+  <div class="keyboard-hint">
+    <span>Navegar con</span>
+    <span class="kbd">↓</span>
+    <span class="kbd">↑</span>
+    <span>o flechas</span>
+  </div>
+
+  <!-- Interactive Scripts -->
+  <script type="text/javascript">
+    // Datawrapper iframe auto-resizer
+    window.addEventListener("message", function(e) {
+      if (typeof e.data["datawrapper-height"] !== "undefined") {
+        var iframes = document.querySelectorAll("iframe");
+        for (var key in e.data["datawrapper-height"]) {
+          for (var i = 0; i < iframes.length; i++) {
+            if (iframes[i].contentWindow === e.source) {
+              iframes[i].style.height = e.data["datawrapper-height"][key] + "px";
+            }
+          }
+        }
+      }
+    });
+
+    // Top progress bar update
+    window.addEventListener("scroll", () => {
+      const winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+      const height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+      const scrolled = height > 0 ? (winScroll / height) * 100 : 0;
+      document.getElementById("progress-bar").style.width = scrolled + "%";
+    });
+
+    // Navigation function
+    function goToSlide(slideNum) {
+      const target = document.getElementById("slide-" + slideNum);
+      if (target) {
+        target.scrollIntoView({ behavior: "smooth" });
+      }
+    }
+
+    // Direct slide URL parameter support (?slide=3)
+    const urlParams = new URLSearchParams(window.location.search);
+    const initialSlide = urlParams.get('slide');
+    if (initialSlide !== null) {
+      document.documentElement.style.scrollBehavior = 'auto';
+      document.body.style.scrollBehavior = 'auto';
+      const s = document.getElementById('slide-' + initialSlide);
+      if (s) {
+        s.scrollIntoView({ behavior: 'instant', block: 'start' });
+      }
+    }
+
+    // Toggle Focus Mode (Expands chart to 100% width)
+    function toggleFocus(bodyId, btn) {
+      const body = document.getElementById(bodyId);
+      if (body) {
+        body.classList.toggle("focused");
+        if (body.classList.contains("focused")) {
+          btn.innerHTML = "✕ Restaurar";
+        } else {
+          btn.innerHTML = "🔍 Expandir";
+        }
+      }
+    }
+
+    // Active pill indicator based on scroll & floating dock update
+    const slides = document.querySelectorAll(".slide");
+    const navPills = document.querySelectorAll(".nav-pill");
+    let currentSlideIndex = 0;
+
+    function updateFloatingNav(idx) {
+      currentSlideIndex = idx;
+      const ind = document.getElementById("floating-slide-indicator");
+      if (ind) {
+        if (idx === 0) ind.textContent = "Portada";
+        else ind.textContent = `0${idx} / 06`;
+      }
+    }
+
+    function prevSlide() {
+      if (currentSlideIndex > 0) goToSlide(currentSlideIndex - 1);
+    }
+    function nextSlide() {
+      if (currentSlideIndex < 6) goToSlide(currentSlideIndex + 1);
+    }
+
+    const observer = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const id = entry.target.id;
+          const slideNum = id.replace("slide-", "");
+          const num = parseInt(slideNum) || 0;
+          updateFloatingNav(num);
+          navPills.forEach(pill => {
+            if (pill.getAttribute("data-slide") === slideNum) {
+              pill.classList.add("active");
+            } else {
+              pill.classList.remove("active");
+            }
+          });
+        }
+      });
+    }, { threshold: 0.5 });
+
+    slides.forEach(slide => observer.observe(slide));
+
+    // Keyboard navigation (Arrow keys & Space)
+    window.addEventListener("keydown", (e) => {
+      if (["ArrowDown", "ArrowRight", "PageDown"].includes(e.key)) {
+        e.preventDefault();
+        const current = [...slides].find(s => {
+          const rect = s.getBoundingClientRect();
+          return rect.top >= -50 && rect.top <= 100;
+        });
+        const currentIdx = current ? parseInt(current.id.replace("slide-", "")) : 0;
+        if (currentIdx < 6) goToSlide(currentIdx + 1);
+      } else if (["ArrowUp", "ArrowLeft", "PageUp"].includes(e.key)) {
+        e.preventDefault();
+        const current = [...slides].find(s => {
+          const rect = s.getBoundingClientRect();
+          return rect.top >= -50 && rect.top <= 100;
+        });
+        const currentIdx = current ? parseInt(current.id.replace("slide-", "")) : 0;
+        if (currentIdx > 0) goToSlide(currentIdx - 1);
+      }
+    });
+
+    // Fullscreen toggle
+    const fsBtn = document.getElementById("fullscreen-toggle");
+    fsBtn.addEventListener("click", () => {
+      if (!document.fullscreenElement) {
+        document.documentElement.requestFullscreen().catch(() => {});
+        fsBtn.innerHTML = "<span>✕ Salir</span>";
+      } else {
+        if (document.exitFullscreen) {
+          document.exitFullscreen();
+          fsBtn.innerHTML = "<span>⛶</span>";
+        }
+      }
+    });
+
+    // Data Lineage Modal toggle
+    const modal = document.getElementById("data-modal");
+    document.getElementById("open-data-modal").addEventListener("click", () => {
+      modal.classList.add("active");
+    });
+    document.getElementById("close-data-modal").addEventListener("click", () => {
+      modal.classList.remove("active");
+    });
+    modal.addEventListener("click", (e) => {
+      if (e.target === modal) modal.classList.remove("active");
+    });
+  </script>
+
+  <!-- Floating presentation navigation dock -->
+  <div class="presentation-floating-nav" id="floating-nav">
+    <button class="floating-nav-btn" onclick="prevSlide()" title="Anterior (←)">← Anterior</button>
+    <span id="floating-slide-indicator" class="floating-slide-num">Portada</span>
+    <button class="floating-nav-btn" onclick="nextSlide()" title="Siguiente (→)">Siguiente →</button>
+  </div>
+</body>
+</html>

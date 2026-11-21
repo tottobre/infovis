@@ -1,0 +1,158 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 620" width="100%" height="100%" preserveAspectRatio="xMidYMid meet" style="background:#ffffff; width: 100%; height: 100%; display: block;">
+<style><![CDATA[
+  @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&amp;family=JetBrains+Mono:wght@600;700&amp;display=swap');
+  text { font-family: 'Plus Jakarta Sans', Arial, sans-serif; }
+  .bar-total { font-size: 13px; font-weight: 800; fill: #0f172a; text-anchor: middle; font-family: 'JetBrains Mono', monospace; }
+  .bar-pct { font-size: 11px; font-weight: 700; fill: #ffffff; text-anchor: middle; pointer-events: none; }
+  .chart-title { font-size: 18px; font-weight: 800; fill: #0f172a; }
+  .chart-sub { font-size: 12px; font-weight: 500; fill: #64748b; }
+  .callout-box { rx: 5; ry: 5; }
+  .callout-text { font-size: 9.5px; font-weight: 800; text-anchor: middle; }
+  .axis-title { font-size: 11px; font-weight: 700; fill: #64748b; }
+  rect.segment {
+    cursor: pointer;
+    transition: fill-opacity 0.2s ease, stroke 0.15s ease;
+  }
+  rect.segment:hover {
+    fill-opacity: 0.88;
+    stroke: #0f172a !important;
+    stroke-width: 2.5px !important;
+  }
+]]></style>
+<rect width="1280" height="620" x="0" y="0" fill="#FFFFFF" id="background"/>
+
+<text x="70" y="32" class="chart-title">¿Cómo cambió la intensidad del esfuerzo mes a mes?</text>
+<text x="70" y="52" class="chart-sub">Volumen mensual clasificado por zona cardíaca (telemetría cardíaca de reloj Garmin).</text>
+
+<g id="viz" transform="translate(0, 42)">
+  <g transform="translate(70, 52)">
+    <g id="Zona_2_Eficiente_km" fill="#10b981">
+      <rect class="segment" x="364.85" y="433.17" width="160.3" height="26.83" rx="3" data-t="Julio • Zona 2 (Eficiente)" data-v="14.0 km (13.3% del mes)" data-d="Primeros rodajes en zona baja (&lt;130 bpm)"></rect><rect class="segment" x="539.9" y="235.17" width="160.3" height="224.83" rx="3" data-t="Agosto • Zona 2 (Eficiente)" data-v="117.3 km (49.8% del mes)" data-d="Mayoría del volumen en quema de grasas"></rect><rect class="segment" x="714.95" y="328.33" width="160.3" height="131.67" rx="3" data-t="Septiembre • Zona 2 (Eficiente)" data-v="68.7 km (91.5% del mes)" data-d="Maratón 42.2 km a 123 bpm promedio"></rect>
+    </g>
+    <g id="Zona_3_Aerobica_km" fill="#f59e0b">
+      <rect class="segment" x="14.75" y="443.13" width="160.3" height="16.87" rx="2" data-t="Mayo • Zona 3 (Aeróbica)" data-v="8.8 km (24.4% del mes)" data-d="Primeras salidas de adaptación"></rect><rect class="segment" x="364.85" y="362.83" width="160.3" height="70.34" rx="2" data-t="Julio • Zona 3 (Aeróbica)" data-v="36.7 km (34.9% del mes)" data-d="Comienza el descenso de pulsaciones"></rect><rect class="segment" x="539.9" y="20.7" width="160.3" height="214.47" rx="2" data-t="Agosto • Zona 3 (Aeróbica)" data-v="111.9 km (47.5% del mes)" data-d="Fondos récord de 24K y 32K"></rect><rect class="segment" x="714.95" y="316.06" width="160.3" height="12.27" rx="2" data-t="Septiembre • Zona 3 (Aeróbica)" data-v="6.4 km (8.5% del mes)" data-d="Tirada de reactivación previa"></rect>
+    </g>
+    <g id="Zona_4_Umbral_km" fill="#ef4444">
+      <rect class="segment" x="14.75" y="390.62" width="160.3" height="52.52" rx="3" data-t="Mayo • Zona 4 (Umbral)" data-v="27.4 km (75.6% del mes)" data-d="Inicio con pulso elevado (147-154 bpm)"></rect><rect class="segment" x="189.8" y="396.18" width="160.3" height="63.82" rx="3" data-t="Junio • Zona 4 (Umbral)" data-v="33.3 km (100% del mes)" data-d="100% de las salidas al límite cardiovascular"></rect><rect class="segment" x="364.85" y="258.18" width="160.3" height="104.65" rx="3" data-t="Julio • Zona 4 (Umbral)" data-v="54.6 km (51.9% del mes)" data-d="Tiradas medias y fondos iniciales"></rect><rect class="segment" x="539.9" y="8.43" width="160.3" height="12.27" rx="3" data-t="Agosto • Zona 4 (Umbral)" data-v="6.4 km (2.7% del mes)" data-d="Mínimo impacto de fatiga extrema"></rect>
+    </g>
+    <text x="94.9" y="420.88" class="bar-pct">27 km (76%)</text><text x="269.95" y="432.09000000000003" class="bar-pct">33 km (100%)</text><text x="445.0" y="450.58500000000004" class="bar-pct">14 km (13%)</text><text x="445.0" y="402.0" class="bar-pct">37 km (35%)</text><text x="445.0" y="314.505" class="bar-pct">55 km (52%)</text><text x="620.05" y="351.585" class="bar-pct">117 km (50%)</text><text x="620.05" y="131.935" class="bar-pct">112 km (47%)</text><text x="795.1" y="398.16499999999996" class="bar-pct">69 km (92%)</text>
+    <text x="94.9" y="380" class="bar-total">36.2 km</text><text x="269.95" y="384" class="bar-total">33.3 km</text><text x="445.0" y="246" class="bar-total">105.2 km</text><text x="620.05" y="-4" class="bar-total">235.6 km</text><text x="795.1" y="304" class="bar-total">75.1 km</text>
+    
+<!-- Callout Junio -->
+<g transform="translate(195, 332)">
+  <rect width="150" height="26" rx="5" fill="#fef2f2" stroke="#ef4444" stroke-width="1.5" />
+  <text x="75" y="17" class="callout-text" fill="#b91c1c">100% pulso al límite</text>
+</g>
+
+<!-- Callout Agosto -->
+<g transform="translate(535, -42)">
+  <rect width="170" height="26" rx="5" fill="#ecfdf5" stroke="#10b981" stroke-width="1.5" />
+  <text x="85" y="17" class="callout-text" fill="#047857">Mes récord: 97% en Zona 2/3</text>
+</g>
+
+<!-- Callout Septiembre -->
+<g transform="translate(710, 248)">
+  <rect width="170" height="26" rx="5" fill="#ecfdf5" stroke="#10b981" stroke-width="1.5" />
+  <text x="85" y="17" class="callout-text" fill="#065f46">🏆 Maratón: 92% en Zona 2</text>
+</g>
+
+    <g id="xAxis" transform="translate(0,460)" fill="none" font-size="11" font-family="'Plus Jakarta Sans', sans-serif" text-anchor="middle"><path class="domain" stroke="#cbd5e1" d="M0,0H890"/><g class="tick" opacity="1" transform="translate(94.90,0)"><line stroke="#cbd5e1" y2="6"/><text fill="#0f172a" font-weight="700" y="12" dy="0.71em">1. Mayo</text></g><g class="tick" opacity="1" transform="translate(269.95,0)"><line stroke="#cbd5e1" y2="6"/><text fill="#0f172a" font-weight="700" y="12" dy="0.71em">2. Junio</text></g><g class="tick" opacity="1" transform="translate(445,0)"><line stroke="#cbd5e1" y2="6"/><text fill="#0f172a" font-weight="700" y="12" dy="0.71em">3. Julio</text></g><g class="tick" opacity="1" transform="translate(620.05,0)"><line stroke="#cbd5e1" y2="6"/><text fill="#0f172a" font-weight="700" y="12" dy="0.71em">4. Agosto (Pico)</text></g><g class="tick" opacity="1" transform="translate(795.10,0)"><line stroke="#cbd5e1" y2="6"/><text fill="#0f172a" font-weight="700" y="12" dy="0.71em">5. Septiembre (42K)</text></g></g>
+    <g id="yAxis" fill="none" font-size="10" font-family="sans-serif" text-anchor="end"><path class="domain" stroke="#cbd5e1" d="M0,460V0"/><g class="tick" opacity="1" transform="translate(0,460)"><line stroke="#f1f5f9" x2="890" stroke-dasharray="3,3" /><line stroke="#cbd5e1" x2="-6"/><text fill="#64748b" x="-9" dy="0.32em">0 km</text></g><g class="tick" opacity="1" transform="translate(0,383.33)"><line stroke="#f1f5f9" x2="890" stroke-dasharray="3,3" /><line stroke="#cbd5e1" x2="-6"/><text fill="#64748b" x="-9" dy="0.32em">40 km</text></g><g class="tick" opacity="1" transform="translate(0,306.67)"><line stroke="#f1f5f9" x2="890" stroke-dasharray="3,3" /><line stroke="#cbd5e1" x2="-6"/><text fill="#64748b" x="-9" dy="0.32em">80 km</text></g><g class="tick" opacity="1" transform="translate(0,230)"><line stroke="#f1f5f9" x2="890" stroke-dasharray="3,3" /><line stroke="#cbd5e1" x2="-6"/><text fill="#64748b" x="-9" dy="0.32em">120 km</text></g><g class="tick" opacity="1" transform="translate(0,153.33)"><line stroke="#f1f5f9" x2="890" stroke-dasharray="3,3" /><line stroke="#cbd5e1" x2="-6"/><text fill="#64748b" x="-9" dy="0.32em">160 km</text></g><g class="tick" opacity="1" transform="translate(0,76.67)"><line stroke="#f1f5f9" x2="890" stroke-dasharray="3,3" /><line stroke="#cbd5e1" x2="-6"/><text fill="#64748b" x="-9" dy="0.32em">200 km</text></g><g class="tick" opacity="1" transform="translate(0,0)"><line stroke="#f1f5f9" x2="890" stroke-dasharray="3,3" /><line stroke="#cbd5e1" x2="-6"/><text fill="#64748b" x="-9" dy="0.32em">240 km</text></g></g>
+  </g>
+</g>
+
+<g id="legend" transform="translate(1010, 88)">
+  <text x="0" y="0" font-size="13" font-weight="800" fill="#0f172a">Zona Cardíaca</text>
+  
+  <!-- Z2 -->
+  <g transform="translate(0, 20)">
+    <rect width="16" height="16" rx="3" fill="#10b981" />
+    <text x="24" y="13" font-size="11" font-weight="700" fill="#0f172a">Zona 2 - Eficiente (&lt;130 bpm)</text>
+    <text x="24" y="27" font-size="9.5" fill="#64748b">Base aeróbica / Quema de grasas</text>
+  </g>
+  
+  <!-- Z3 -->
+  <g transform="translate(0, 65)">
+    <rect width="16" height="16" rx="3" fill="#f59e0b" />
+    <text x="24" y="13" font-size="11" font-weight="700" fill="#0f172a">Zona 3 - Aeróbica (130-144 bpm)</text>
+    <text x="24" y="27" font-size="9.5" fill="#64748b">Ritmo crucero de fondo</text>
+  </g>
+  
+  <!-- Z4 -->
+  <g transform="translate(0, 110)">
+    <rect width="16" height="16" rx="3" fill="#ef4444" />
+    <text x="24" y="13" font-size="11" font-weight="700" fill="#0f172a">Zona 4 - Umbral (≥145 bpm)</text>
+    <text x="24" y="27" font-size="9.5" fill="#64748b">Alta intensidad y fatiga</text>
+  </g>
+  
+  <!-- Mini resumen -->
+  <g transform="translate(0, 170)">
+    <rect width="240" height="80" rx="6" fill="#f8fafc" stroke="#e2e8f0" stroke-width="1" />
+    <text x="12" y="20" font-size="10.5" font-weight="800" fill="#0f172a">Conclusión visual:</text>
+    <text x="12" y="38" font-size="9.5" fill="#475569">• Junio: 100% en Zona 4 (Rojo)</text>
+    <text x="12" y="54" font-size="9.5" fill="#475569">• Agosto: 236 km (Pico de volumen)</text>
+    <text x="12" y="70" font-size="9.5" fill="#475569">• Sep: 92% en Zona 2 (Maratón 42K)</text>
+  </g>
+</g>
+
+
+<g id="dynamic-tooltip" style="display:none; pointer-events:none; z-index:999;">
+  <rect id="tt-bg" rx="6" ry="6" fill="#0f172a" fill-opacity="0.96" stroke="#38bdf8" stroke-width="1" style="filter: drop-shadow(0 4px 14px rgba(0,0,0,0.45));" />
+  <text id="tt-title" fill="#ffffff" font-size="11.5" font-weight="800" x="12" y="18" />
+  <text id="tt-val" fill="#38bdf8" font-size="10.5" font-weight="700" x="12" y="34" />
+  <text id="tt-desc" fill="#94a3b8" font-size="9" font-weight="500" x="12" y="49" />
+</g>
+
+<script type="text/javascript"><![CDATA[
+  function initTooltips() {
+    var svg = document.querySelector('svg');
+    var tt = document.getElementById('dynamic-tooltip');
+    var ttBg = document.getElementById('tt-bg');
+    var ttTitle = document.getElementById('tt-title');
+    var ttVal = document.getElementById('tt-val');
+    var ttDesc = document.getElementById('tt-desc');
+    if (!svg || !tt) return;
+
+    var segments = document.querySelectorAll('.segment');
+    segments.forEach(function(el) {
+      el.addEventListener('mouseenter', function(e) {
+        var t = el.getAttribute('data-t') || '';
+        var v = el.getAttribute('data-v') || '';
+        var d = el.getAttribute('data-d') || '';
+        if (!t) return;
+        ttTitle.textContent = t;
+        ttVal.textContent = v;
+        ttDesc.textContent = d;
+        var maxLen = Math.max(t.length, v.length, d.length);
+        var w = Math.max(maxLen * 7.5 + 32, 220);
+        var h = d ? 66 : 48;
+        ttBg.setAttribute('width', w);
+        ttBg.setAttribute('height', h);
+        tt.style.display = 'block';
+      });
+      el.addEventListener('mousemove', function(e) {
+        var pt = svg.createSVGPoint();
+        pt.x = e.clientX;
+        pt.y = e.clientY;
+        var loc = pt.matrixTransform(svg.getScreenCTM().inverse());
+        var x = loc.x + 14;
+        var y = loc.y + 14;
+        var w = parseFloat(ttBg.getAttribute('width')) || 220;
+        var h = parseFloat(ttBg.getAttribute('height')) || 66;
+        if (x + w > 1270) x = loc.x - w - 10;
+        if (y + h > 610) y = loc.y - h - 10;
+        tt.setAttribute('transform', 'translate(' + x + ',' + y + ')');
+      });
+      el.addEventListener('mouseleave', function() {
+        tt.style.display = 'none';
+      });
+    });
+  }
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', initTooltips);
+  } else {
+    initTooltips();
+  }
+]]></script>
+
+</svg>
