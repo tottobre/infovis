@@ -1067,11 +1067,12 @@
       <a href="#slide-1" class="nav-pill" data-slide="1">01. Rutina y Horarios</a>
       <span class="nav-section-label">Parte 2</span>
       <a href="#slide-2" class="nav-pill" data-slide="2">02. Carrera 42K</a>
-      <a href="#slide-3" class="nav-pill" data-slide="3">03. Disciplinas vs Masa Muscular</a>
-      <a href="#slide-4" class="nav-pill" data-slide="4">04. Composición Corporal</a>
-      <a href="#slide-5" class="nav-pill" data-slide="5">05. Adaptación Cardíaca</a>
+      <a href="#slide-3" class="nav-pill" data-slide="3">03. Exigencia vs Gasto</a>
+      <a href="#slide-4" class="nav-pill" data-slide="4">04. Disciplinas vs Masa Muscular</a>
+      <a href="#slide-5" class="nav-pill" data-slide="5">05. Composición Corporal</a>
+      <a href="#slide-6" class="nav-pill" data-slide="6">06. Adaptación Cardíaca</a>
       <span class="nav-section-label">Cierre</span>
-      <a href="#slide-6" class="nav-pill" data-slide="6">06. Balance y Meta</a>
+      <a href="#slide-7" class="nav-pill" data-slide="7">07. Balance y Meta</a>
     </div>
     <div class="nav-actions">
       <button class="nav-btn-icon" id="open-data-modal" title="Metodología y Datasets">
@@ -1142,39 +1143,48 @@
     </div>
   </section>
 
-  <!-- SLIDE 3: FRECUENCIA VS MASA MUSCULAR (TABLEAU PUBLIC) -->
+  <!-- SLIDE 3: EXIGENCIA Y GASTO POR DISCIPLINA (FLOURISH SCATTER) -->
   <section id="slide-3" class="slide">
     <div class="slide-body" id="body-slide-3">
+      <div class="chart-panel white-canvas">
+        <iframe src="https://flo.uri.sh/visualisation/30911801/embed" title="¿Qué disciplina demanda mayor exigencia cardiovascular y gasto calórico?" frameborder="0" scrolling="no" style="width: 100%; height: 100%; border: none; border-radius: 8px;"></iframe>
+      </div>
+    </div>
+  </section>
+
+  <!-- SLIDE 4: FRECUENCIA VS MASA MUSCULAR (TABLEAU PUBLIC) -->
+  <section id="slide-4" class="slide">
+    <div class="slide-body" id="body-slide-4">
       <div class="chart-panel white-canvas">
         <iframe src="https://public.tableau.com/views/TP1_17952333302010/Dashboard1?:showVizHome=no&:embed=true" title="¿Cómo varió la masa muscular según el tipo y volumen de entrenamiento?" frameborder="0" style="width: 100%; height: 100%; border: none; border-radius: 8px;"></iframe>
       </div>
     </div>
   </section>
 
-  <!-- SLIDE 4: COMPOSICIÓN CORPORAL (DATAWRAPPER SMALL MULTIPLES) -->
-  <section id="slide-4" class="slide">
-    <div class="slide-body" id="body-slide-4">
+  <!-- SLIDE 5: COMPOSICIÓN CORPORAL (DATAWRAPPER SMALL MULTIPLES) -->
+  <section id="slide-5" class="slide">
+    <div class="slide-body" id="body-slide-5">
       <div class="chart-panel white-canvas">
         <iframe title="¿Cómo impactó la preparación en mi masa muscular y grasa corporal?" aria-label="Small multiple line chart" id="datawrapper-chart-QijmD" src="https://datawrapper.dwcdn.net/QijmD/1/" scrolling="no" frameborder="0" style="width: 100%; height: 100%; border: none;" data-external="1"></iframe>
       </div>
     </div>
   </section>
 
-  <!-- SLIDE 5: TRANSICIÓN CARDÍACA POR ZONAS (RAWGRAPHS OBJECT INTERACTIVO) -->
-  <section id="slide-5" class="slide">
-    <div class="slide-body" id="body-slide-5">
+  <!-- SLIDE 6: TRANSICIÓN CARDÍACA POR ZONAS (RAWGRAPHS OBJECT INTERACTIVO) -->
+  <section id="slide-6" class="slide">
+    <div class="slide-body" id="body-slide-6">
       <div class="chart-panel white-canvas">
         <object type="image/svg+xml" data="rawgraphs_zonas_final.svg" style="width: 100%; height: 100%; border: none; display: block;"></object>
       </div>
     </div>
   </section>
 
-  <!-- SLIDE 6: CONCLUSIONES Y BALANCE FINAL -->
-  <section id="slide-6" class="slide">
+  <!-- SLIDE 7: CONCLUSIONES Y BALANCE FINAL -->
+  <section id="slide-7" class="slide">
     <div class="conclusions-slide">
       <div class="conclusions-header">
         <div class="slide-badge-row" style="max-width: 250px;">
-          <span class="slide-num">06 / 06</span>
+          <span class="slide-num">07 / 07</span>
           <span class="slide-tool">Balance final</span>
         </div>
         <h2 style="font-size: 1.5rem; color: #fff;">El balance: ¿Valió la pena el esfuerzo?</h2>
@@ -1298,8 +1308,8 @@
       </div>
 
       <div class="conclusions-footer">
-        <button class="nav-btn" onclick="goToSlide(5)">← Anterior (Adaptación Cardíaca)</button>
-        <span class="slide-page-indicator">6 / 6</span>
+        <button class="nav-btn" onclick="goToSlide(6)">← Anterior (Adaptación Cardíaca)</button>
+        <span class="slide-page-indicator">7 / 7</span>
         <button class="nav-btn" onclick="goToSlide(0)">Volver al inicio</button>
       </div>
     </div>
@@ -1327,7 +1337,7 @@
         </div>
         <div class="source-item">
           <strong>4. Herramientas de Visualización Empleadas</strong>
-          Datawrapper (Áreas y Tablas de calor), Flourish Studio (Combo chart y Scatter multivariable), RAWGraphs (Bubble Timeline SVG) y Python / Pandas para la limpieza y calibración de outliers.
+          Datawrapper (Tablas de calor y Small Multiples), Flourish Studio (Bar Chart Race y Scatter multivariable), Tableau Public (Dashboard interactivo), RAWGraphs (Bubble Timeline SVG) y Python / Pandas para la limpieza y calibración de datos.
         </div>
       </div>
     </div>
@@ -1408,7 +1418,7 @@
       const ind = document.getElementById("floating-slide-indicator");
       if (ind) {
         if (idx === 0) ind.textContent = "Portada";
-        else ind.textContent = `0${idx} / 06`;
+        else ind.textContent = `0${idx} / 07`;
       }
     }
 
@@ -1416,7 +1426,7 @@
       if (currentSlideIndex > 0) goToSlide(currentSlideIndex - 1);
     }
     function nextSlide() {
-      if (currentSlideIndex < 6) goToSlide(currentSlideIndex + 1);
+      if (currentSlideIndex < 7) goToSlide(currentSlideIndex + 1);
     }
 
     const observer = new IntersectionObserver((entries) => {
@@ -1448,7 +1458,7 @@
           return rect.top >= -50 && rect.top <= 100;
         });
         const currentIdx = current ? parseInt(current.id.replace("slide-", "")) : 0;
-        if (currentIdx < 6) goToSlide(currentIdx + 1);
+        if (currentIdx < 7) goToSlide(currentIdx + 1);
       } else if (["ArrowUp", "ArrowLeft", "PageUp"].includes(e.key)) {
         e.preventDefault();
         const current = [...slides].find(s => {
