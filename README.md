@@ -4,8 +4,8 @@
 > **Carrera:** Maestría en Ciencia de Datos (MCD) / Especialización en Ciencia de Datos (ECD) — ITBA  
 > **Materia:** Visualización de la Información  
 > **Profesor:** Ariel Aizemberg  
-> **Alumno:** Tomas Ottobre  
-> **🚀 Presentación en vivo:** [https://tottobre.github.io/infovis/](https://tottobre.github.io/infovis/)
+> **🚀 Presentación en vivo del TP:** [https://tottobre.github.io/infovis/presentacion.html](https://tottobre.github.io/infovis/presentacion.html)  
+> **🌐 Ejercicios de clase:** [https://tottobre.github.io/infovis/](https://tottobre.github.io/infovis/)
 
 ---
 
@@ -39,8 +39,8 @@ Para garantizar la reproducibilidad y transparencia científica exigida por la c
 
 ```
 infovis/
-├── index.html                           # Presentación navegable principal (GitHub Pages)
-├── presentacion.html                    # Mirror de la presentación
+├── index.html                           # Ejercicios prácticos de clase (GitHub Pages root)
+├── presentacion.html                    # Presentación interactiva completa del TP de Datos Personales
 ├── rawgraphs_zonas_final.svg            # Gráfico vectorial interactivo de zonas cardíacas
 ├── assets/
 │   └── tomas_maraton_42k.jpg            # Fotografía finisher oficial con medalla
